@@ -591,7 +591,7 @@ for (i in 1:length(files))
 				indices = indices[sample(1:length(indices), nberOfTreesToSample, replace=F)]
 			}
 		txt2 = c(txt2, txt1[indices], "End;")
-		write(txt2, paste0("All_tree_extraction_files/TreeTime_",analysis,"/",files[i]))
+		write(txt2, paste0("All_tree_extraction_files/",files[i]))
 	}
 files = list.files(paste0("BEAST_RRW_analyses/TreeTime_",analysis)); files = files[which(grepl("\\.trees",files))]
 for (i in 1:length(files))
@@ -602,31 +602,31 @@ for (i in 1:length(files))
 source("MCC_tree_extractions.r")
 for (i in 1:length(files))
 	{
-		if (!file.exists(paste0("All_tree_extraction_files/TreeTime_",analysis,"/",gsub("\\.trees","\\.csv",files[i]))))
+		if (!file.exists(paste0("All_tree_extraction_files/",gsub("\\.trees","\\.csv",files[i]))))
 			{
 				index = as.numeric(gsub("\\.trees","",unlist(strsplit(files[i],"_"))[2]))
 				mostRecentSamplingDatum = max(as.numeric(clusters2[[index]][which(!is.na(clusters2[[index]][,"longitude"])),"collection_date"]))
-				mcc_tre = readAnnotatedNexus(paste0("All_tree_extraction_files/TreeTime_",analysis,"/",gsub("\\.trees","\\.tree",files[i]))); dates = c()
+				mcc_tre = readAnnotatedNexus(paste0("All_tree_extraction_files/",gsub("\\.trees","\\.tree",files[i]))); dates = c()
 				mcc_tab = MCC_tree_extractions(mcc_tre, mostRecentSamplingDatum)
-				write.csv(mcc_tab, paste0("All_tree_extraction_files/TreeTime_",analysis,"/",gsub("\\.trees","\\.csv",files[i])), row.names=F, quote=F)
+				write.csv(mcc_tab, paste0("All_tree_extraction_files/",gsub("\\.trees","\\.csv",files[i])), row.names=F, quote=F)
 			}
 	}
 randomSampling = FALSE; coordinateAttributeName = "coordinates"; nberOfCores = 10
 for (i in 1:length(files))
 	{
-		localTreesDirectory = paste0("All_tree_extraction_files/TreeTime_",analysis,"/",gsub("\\.trees","_ext",files[i]))
+		localTreesDirectory = paste0("All_tree_extraction_files/",gsub("\\.trees","_ext",files[i]))
 		if (!file.exists(paste0(localTreesDirectory,"/TreeExtractions_1.csv")))
 			{
 				index = as.numeric(gsub("\\.trees","",unlist(strsplit(files[i],"_"))[2])); burnIn = 0
 				mostRecentSamplingDatum = max(as.numeric(clusters2[[index]][which(!is.na(clusters2[[index]][,"longitude"])),"collection_date"]))
-				allTrees = scan(file=paste0("All_tree_extraction_files/TreeTime_",analysis,"/",files[i]), what="", sep="\n", quiet=T, blank.lines.skip=F)
+				allTrees = scan(file=paste0("All_tree_extraction_files/",files[i]), what="", sep="\n", quiet=T, blank.lines.skip=F)
 				treeExtractions(localTreesDirectory, allTrees, burnIn, randomSampling, nberOfTreesToSample, mostRecentSamplingDatum, coordinateAttributeName, nberOfCores)
 			}
 	}
 admin0 = shapefile("Mex_GADM_shapefiles/Mexico_admin0.shp")
 for (i in 1:length(files))
 	{
-		tab = read.csv(paste0("All_tree_extraction_files/TreeTime_",analysis,"/",gsub("\\.trees","\\.csv",files[i])), head=T)
+		tab = read.csv(paste0("All_tree_extraction_files/",gsub("\\.trees","\\.csv",files[i])), head=T)
 		if (abs(tab[1,"startLon"]) > 1000) # untransformed coordinates
 			{
 				spatial_points_sf1 = st_as_sf(tab[,c("startLon","startLat")], coords=c("startLon","startLat"), crs=crs(agebs_study_area))
@@ -635,7 +635,7 @@ for (i in 1:length(files))
 				spatial_points_sf1 = st_as_sf(tab[,c("endLon","endLat")], coords=c("endLon","endLat"), crs=crs(agebs_study_area))
 				spatial_points_sf2 = st_transform(spatial_points_sf1, crs(admin0))
 				pts2 = as(spatial_points_sf2, "Spatial")@coords; tab[,c("endLon","endLat")] = pts2[,1:2]
-				write.csv(tab, paste0("All_tree_extraction_files/TreeTime_",analysis,"/",gsub("\\.trees","\\.csv",files[i])), row.names=F, quote=F)
+				write.csv(tab, paste0("All_tree_extraction_files/",gsub("\\.trees","\\.csv",files[i])), row.names=F, quote=F)
 			}
 	}
 nberOfExtractionFiles = nberOfTreesToSample
@@ -643,7 +643,7 @@ for (i in 1:length(files))
 	{
 		for (j in 1:nberOfExtractionFiles)
 			{
-				tab = read.csv(paste0("All_tree_extraction_files/TreeTime_",analysis,"/",gsub("\\.trees","_ext",files[i]),"/TreeExtractions_",j,".csv"), head=T)
+				tab = read.csv(paste0("All_tree_extraction_files/",gsub("\\.trees","_ext",files[i]),"/TreeExtractions_",j,".csv"), head=T)
 				if (abs(tab[1,"startLon"]) > 1000) # untransformed coordinates
 					{
 						spatial_points_sf1 = st_as_sf(tab[,c("startLon","startLat")], coords=c("startLon","startLat"), crs=crs(agebs_study_area))
@@ -652,7 +652,7 @@ for (i in 1:length(files))
 						spatial_points_sf1 = st_as_sf(tab[,c("endLon","endLat")], coords=c("endLon","endLat"), crs=crs(agebs_study_area))
 						spatial_points_sf2 = st_transform(spatial_points_sf1, crs(admin0))
 						pts2 = as(spatial_points_sf2, "Spatial")@coords; tab[,c("endLon","endLat")] = pts2[,1:2]
-						write.csv(tab, paste0("All_tree_extraction_files/TreeTime_",analysis,"/",gsub("\\.trees","_ext",files[i]),"/TreeExtractions_",j,".csv"), row.names=F, quote=F)
+						write.csv(tab, paste0("All_tree_extraction_files/",gsub("\\.trees","_ext",files[i]),"/TreeExtractions_",j,".csv"), row.names=F, quote=F)
 					}
 			}
 	}
@@ -680,7 +680,7 @@ for (i in 1:length(files))
 	{
 		for (j in 1:nberOfExtractionFiles)
 			{
-				tab = read.csv(paste0("All_tree_extraction_files/TreeTime_",analysis,"/",gsub("\\.trees","_ext",files[i]),"/TreeExtractions_",j,".csv"), head=T); tmp = tab
+				tab = read.csv(paste0("All_tree_extraction_files/",gsub("\\.trees","_ext",files[i]),"/TreeExtractions_",j,".csv"), head=T); tmp = tab
 				if (!"startAGEB"%in%colnames(tab))
 					{
 						spatial_points_sf1 = st_as_sf(tab[,c("startLon","startLat")], coords=c("startLon","startLat"), crs=crs(admin0))
@@ -691,13 +691,13 @@ for (i in 1:length(files))
 						pts2 = as(spatial_points_sf2, "Spatial")@coords; tmp[,c("endLon","endLat")] = pts2[,1:2]
 						tab$startAGEB = as.character(sp::over(SpatialPoints(tmp[,c("startLon","startLat")], crs(agebs_study_area)), agebs_study_area)[,"CVEGEO"])
 						tab$endAGEB = as.character(sp::over(SpatialPoints(tmp[,c("endLon","endLat")], crs(agebs_study_area)), agebs_study_area)[,"CVEGEO"])
-						write.csv(tab, paste0("All_tree_extraction_files/TreeTime_",analysis,"/",gsub("\\.trees","_ext",files[i]),"/TreeExtractions_",j,".csv"), row.names=F, quote=F)
+						write.csv(tab, paste0("All_tree_extraction_files/",gsub("\\.trees","_ext",files[i]),"/TreeExtractions_",j,".csv"), row.names=F, quote=F)
 					}			
 			}
 	}
 for (i in 1:length(files))
 	{
-		tab = read.csv(paste0("All_tree_extraction_files/TreeTime_",analysis,"/",gsub("\\.trees","\\.csv",files[i])), head=T)
+		tab = read.csv(paste0("All_tree_extraction_files/",gsub("\\.trees","\\.csv",files[i])), head=T)
 		cladeIDs = matrix(nrow=dim(tab)[1], ncol=1); colnames(cladeIDs) = "cladeID"
 		cladeIDs[,"cladeID"] = gsub("\\.trees","",unlist(strsplit(files[i],"_"))[2])
 		if (i == 1)
@@ -715,7 +715,7 @@ for (i in 1:nberOfExtractionFiles)
 	{
 		for (j in 1:length(files))
 			{
-				tab = read.csv(paste0("All_tree_extraction_files/TreeTime_",analysis,"/",gsub("\\.trees","_ext",files[j]),"/TreeExtractions_",i,".csv"), head=T)
+				tab = read.csv(paste0("All_tree_extraction_files/",gsub("\\.trees","_ext",files[j]),"/TreeExtractions_",i,".csv"), head=T)
 				cladeIDs = matrix(nrow=dim(tab)[1], ncol=1); colnames(cladeIDs) = "cladeID"
 				cladeIDs[,"cladeID"] = gsub("\\.trees","",unlist(strsplit(files[i],"_"))[2])
 				if (j == 1)
@@ -764,9 +764,9 @@ for (h in 0:1) # length(clades)) # for (h in c(50,178,268))
 		if (h > 1) cexNode = 0.8
 		if (h > 0)
 			{
-				localTreesDirectory = paste0("All_tree_extraction_files/TreeTime_",analysis,"/",clades[h],"_ext"); nberOfExtractionFiles = 100
+				localTreesDirectory = paste0("All_tree_extraction_files/",clades[h],"_ext"); nberOfExtractionFiles = 100
 				percentage = 80; prob = percentage/100; precision = 1; croppingPolygons = FALSE
-				mcc = read.csv(paste0("All_tree_extraction_files/TreeTime_",analysis,"/",clades[h],".csv"), head=T); startDatum = min(mcc[,"startYear"])
+				mcc = read.csv(paste0("All_tree_extraction_files/",clades[h],".csv"), head=T); startDatum = min(mcc[,"startYear"])
 				if ((h > 1)&(length(which(!mcc[,"node2"]%in%mcc[,"node1"])) >= 100)) cexNode = 0.5
 				polygons = suppressWarnings(spreadGraphic2(localTreesDirectory, nberOfExtractionFiles, prob, startDatum, precision))
 				startYears_indices = (((mcc[,"startYear"]-minYear)/(maxYear-minYear))*100)+1
@@ -782,7 +782,7 @@ for (h in 0:1) # length(clades)) # for (h in c(50,178,268))
 					}
 			}
 		if (h == 0) pdf(paste0("All_tree_extraction_files/TreeTime_",analysis,"/1or2_clades.pdf"), width=6, height=6) # dev.new(width=6, height=6)
-		if (h >= 1) pdf(paste0("All_tree_extraction_files/TreeTime_",analysis,"/",clades[h],".pdf"), width=6, height=6) # dev.new(width=6, height=6)
+		if (h >= 1) pdf(paste0("All_tree_extraction_files/",clades[h],".pdf"), width=6, height=6) # dev.new(width=6, height=6)
 		par(oma=c(0,0,0,0), mar=c(0.5,0.5,0.5,0.5), lwd=0.2, col="gray30")
 		plot(Mexico_state_and_city, border=NA, col=NA, lwd=0.5)
 		plot(population_count_log, col=pop_log_cols, add=T, legend=F)
@@ -978,7 +978,7 @@ source("spreadStatistics_mod.r"); source("isolationByMobility_fct.r")
 files = list.files(paste0("All_tree_extraction_files/TreeTime_",analysis)); directories = files[which(grepl("_ext",files))]
 for (i in 2:length(directories))
 	{
-		localTreesDirectory = paste0("All_tree_extraction_files/TreeTime_",analysis,"/",directories[i])
+		localTreesDirectory = paste0("All_tree_extraction_files/",directories[i])
 		outputName = paste0("All_tree_extraction_files/TreeTime_",analysis,"/All_clades_stats/",gsub("_ext","",directories[i]))
 		nberOfExtractionFiles = 100; timeSlices = 100; onlyTipBranches = FALSE; showingPlots = FALSE; nberOfCores = 20; slidingWindow = 1
 		spreadStatistics_mod(localTreesDirectory, nberOfExtractionFiles, timeSlices, onlyTipBranches, showingPlots, outputName, nberOfCores, slidingWindow)		
@@ -986,7 +986,7 @@ for (i in 2:length(directories))
 IBM_signals = matrix(nrow=(length(directories)-1), ncol=2); colnames(IBM_signals) = c("IBM_signal_rP1","IBM_signal_rP2")
 for (i in 2:length(directories))
 	{
-		localTreesDirectory = paste0("All_tree_extraction_files/TreeTime_",analysis,"/",directories[i]); nberOfExtractionFiles = 1
+		localTreesDirectory = paste0("All_tree_extraction_files/",directories[i]); nberOfExtractionFiles = 1
 		outputName = paste0("All_tree_extraction_files/TreeTime_",analysis,"/All_clades_stats/",gsub("_ext","",directories[i]))	
 		IBM_signals[i-1,] = isolationByMobility_fct(localTreesDirectory, nberOfExtractionFiles, mobility_index, outputName)
 	}
@@ -1023,7 +1023,7 @@ sizes = rep(NA, length(files)); medians = rep(NA, length(files)); vSs1 = list();
 for (i in 1:length(files))
 	{
 		clade_ID = gsub("_estimated_dispersal_statistics.txt","",files[i])
-		tab = read.csv(paste0("All_tree_extraction_files/TreeTime_",analysis,"/",clade_ID,"_ext/TreeExtractions_1.csv"), head=T)
+		tab = read.csv(paste0("All_tree_extraction_files/",clade_ID,"_ext/TreeExtractions_1.csv"), head=T)
 		sizes[i] = length(which(!tab[,"node2"]%in%tab[,"node1"]))
 		tab = read.table(paste0("All_tree_extraction_files/TreeTime_",analysis,"/All_clades_stats/",files[i]), head=T)
 		vS = tab[,"weighted_diffusion_coefficient"]; medians[i] = median(vS); vSs1[[i]] = vS; vSs1_log[[i]] = log(vS)
