@@ -1,0 +1,998 @@
+
+Operator analysis
+Operator                                          Tuning   Count      Time     Time/Op  Pr(accept) Smoothed_Pr(accept)
+scale(coordinates.diffusion.rates5)               0.158   1867255    8470246  4.54     0.2337      0.19        
+scale(coordinates.diffusion.rates6)               0.147   1867215    9495371  5.09     0.2343      0.29        
+scale(coordinates.diffusion.rates7)               0.132   1867480    8465068  4.53     0.2339      0.23        
+scale(coordinates.diffusion.rates8)               0.175   1868867    9471464  5.07     0.2339      0.28        
+scale(coordinates.diffusion.rates11)              0.155   1869028    9454602  5.06     0.2342      0.22        
+scale(coordinates.diffusion.rates15)              0.135   1866377    8460563  4.53     0.2339      0.26        
+scale(coordinates.diffusion.rates19)              0.081   1867293    8467357  4.53     0.2339      0.32        
+scale(coordinates.diffusion.rates22)              0.148   1866316    8461123  4.53     0.2343      0.18        
+scale(coordinates.diffusion.rates28)              0.126   1868151    8468082  4.53     0.2339      0.28        
+scale(coordinates.diffusion.rates29)              0.12    1868900    8476243  4.54     0.2336      0.22        
+scale(coordinates.diffusion.rates30)              0.154   1867445    8468200  4.53     0.234       0.24        
+scale(coordinates.diffusion.rates35)              0.131   1869613    9520750  5.09     0.2342      0.23        
+scale(coordinates.diffusion.rates36)              0.126   1869814    8475064  4.53     0.2342      0.22        
+scale(coordinates.diffusion.rates41)              0.136   1867315    8469057  4.54     0.2338      0.26        
+scale(coordinates.diffusion.rates45)              0.152   1869082    8477296  4.54     0.2342      0.27        
+scale(coordinates.diffusion.rates51)              0.107   1868091    8473103  4.54     0.234       0.24        
+scale(coordinates.diffusion.rates52)              0.157   1866618    9379158  5.02     0.2339      0.21        
+scale(coordinates.diffusion.rates61)              0.153   1867206    8466884  4.53     0.234       0.28        
+scale(coordinates.diffusion.rates63)              0.125   1865922    8644273  4.63     0.2338      0.23        
+scale(coordinates.diffusion.rates71)              0.157   1866727    8466726  4.54     0.2339      0.21        
+scale(coordinates.diffusion.rates72)              0.111   1866063    8465911  4.54     0.2337      0.27        
+scale(coordinates.diffusion.rates76)              0.116   1869369    8479052  4.54     0.234       0.23        
+scale(coordinates.diffusion.rates79)              0.175   1869457    9400169  5.03     0.2344      0.22        
+scale(coordinates.diffusion.rates81)              0.117   1865230    9258627  4.96     0.2337      0.2         
+scale(coordinates.diffusion.rates83)              0.1     1865956    8465041  4.54     0.2338      0.21        
+scale(coordinates.diffusion.rates84)              0.164   1865421    8463444  4.54     0.2339      0.2         
+scale(coordinates.diffusion.rates85)              0.245   1868468    8476419  4.54     0.2335      0.2         
+scale(coordinates.diffusion.rates88)              0.11    1867185    8469580  4.54     0.2342      0.27        
+scale(coordinates.diffusion.rates89)              0.141   1866599    8469070  4.54     0.2339      0.17        
+scale(coordinates.diffusion.rates90)              0.1     1869864    8481339  4.54     0.234       0.28        
+scale(coordinates.diffusion.rates93)              0.142   1865829    10401339 5.57     0.234       0.28        
+scale(coordinates.diffusion.rates95)              0.131   1864856    9925004  5.32     0.2342      0.26        
+scale(coordinates.diffusion.rates101)             0.147   1867630    8473228  4.54     0.2341      0.19        
+scale(coordinates.diffusion.rates104)             0.14    1867639    8467997  4.53     0.234       0.17        
+scale(coordinates.diffusion.rates105)             0.131   1867873    9485124  5.08     0.2336      0.26        
+scale(coordinates.diffusion.rates106)             0.21    1866570    8466491  4.54     0.2339      0.21        
+scale(coordinates.diffusion.rates108)             0.156   1865249    8457382  4.53     0.2341      0.29        
+scale(coordinates.diffusion.rates112)             0.155   1868339    8473229  4.54     0.2338      0.21        
+scale(coordinates.diffusion.rates113)             0.167   1867632    8470993  4.54     0.2342      0.23        
+scale(coordinates.diffusion.rates114)             0.114   1864783    9369816  5.02     0.2342      0.26        
+scale(coordinates.diffusion.rates117)             0.098   1866114    9423819  5.05     0.2337      0.27        
+scale(coordinates.diffusion.rates124)             0.101   1866455    9429276  5.05     0.2341      0.25        
+scale(coordinates.diffusion.rates126)             0.154   1870021    10333693 5.53     0.2338      0.21        
+scale(coordinates.diffusion.rates128)             0.148   1868195    8475078  4.54     0.2339      0.27        
+scale(coordinates.diffusion.rates130)             0.129   1869754    9387131  5.02     0.2337      0.23        
+scale(coordinates.diffusion.rates138)             0.14    1867155    8680172  4.65     0.2342      0.25        
+scale(coordinates.diffusion.rates139)             0.135   1868102    9177965  4.91     0.2342      0.28        
+scale(coordinates.diffusion.rates144)             0.127   1868603    9065478  4.85     0.234       0.21        
+scale(coordinates.diffusion.rates146)             0.142   1868428    8476012  4.54     0.2337      0.14        
+scale(coordinates.diffusion.rates151)             0.132   1870379    8485301  4.54     0.2339      0.27        
+scale(coordinates.diffusion.rates156)             0.165   1867769    8472296  4.54     0.2342      0.26        
+scale(coordinates.diffusion.rates158)             0.135   1865769    8463492  4.54     0.2339      0.25        
+scale(coordinates.diffusion.rates162)             0.113   1866772    8468697  4.54     0.2341      0.27        
+scale(coordinates.diffusion.rates164)             0.114   1865241    8460558  4.54     0.2342      0.23        
+scale(coordinates.diffusion.rates168)             0.117   1868780    8477721  4.54     0.2339      0.23        
+scale(coordinates.diffusion.rates169)             0.125   1866558    8455032  4.53     0.2339      0.19        
+scale(coordinates.diffusion.rates174)             0.182   1868454    8475251  4.54     0.2339      0.21        
+scale(coordinates.diffusion.rates181)             0.114   1869874    8480599  4.54     0.2341      0.29        
+scale(coordinates.diffusion.rates182)             0.129   1867534    9423313  5.05     0.2338      0.3         
+scale(coordinates.diffusion.rates183)             0.126   1866170    8464536  4.54     0.2339      0.23        
+scale(coordinates.diffusion.rates184)             0.145   1867741    9474814  5.07     0.2337      0.26        
+scale(coordinates.diffusion.rates186)             0.188   1864915    8456772  4.53     0.2338      0.2         
+scale(coordinates.diffusion.rates187)             0.126   1867532    9387938  5.03     0.2342      0.26        
+scale(coordinates.diffusion.rates188)             0.124   1866727    8380471  4.49     0.2338      0.27        
+scale(coordinates.diffusion.rates195)             0.122   1868950    8476235  4.54     0.234       0.3         
+scale(coordinates.diffusion.rates198)             0.134   1868129    8475896  4.54     0.2339      0.18        
+scale(coordinates.diffusion.rates206)             0.114   1869301    8480711  4.54     0.234       0.3         
+scale(coordinates.diffusion.rates208)             0.161   1866000    8463648  4.54     0.2338      0.23        
+scale(coordinates.diffusion.rates211)             0.154   1867759    9437582  5.05     0.2342      0.23        
+scale(coordinates.diffusion.rates216)             0.139   1863792    9373899  5.03     0.234       0.31        
+scale(coordinates.diffusion.rates221)             0.128   1865874    9524308  5.1      0.2341      0.26        
+scale(coordinates.diffusion.rates223)             0.136   1866992    8470051  4.54     0.234       0.26        
+scale(coordinates.diffusion.rates224)             0.125   1868990    8477943  4.54     0.2339      0.23        
+scale(coordinates.diffusion.rates234)             0.168   1866626    8467788  4.54     0.2342      0.26        
+scale(coordinates.diffusion.rates237)             0.168   1867931    8474704  4.54     0.2337      0.16        
+scale(coordinates.diffusion.rates240)             0.141   1864788    8459235  4.54     0.234       0.23        
+scale(coordinates.diffusion.rates241)             0.116   1867743    8473025  4.54     0.2348      0.28        
+scale(coordinates.diffusion.rates245)             0.151   1865749    8464069  4.54     0.2344      0.21        
+scale(coordinates.diffusion.rates246)             0.117   1871339    9436343  5.04     0.2339      0.19        
+scale(coordinates.diffusion.rates247)             0.14    1867173    8469898  4.54     0.2339      0.26        
+scale(coordinates.diffusion.rates257)             0.173   1867815    9482554  5.08     0.2339      0.23        
+scale(coordinates.diffusion.rates258)             0.163   1868850    9267290  4.96     0.234       0.25        
+scale(coordinates.diffusion.rates260)             0.198   1868150    8474355  4.54     0.2337      0.22        
+scale(coordinates.diffusion.rates265)             0.105   1867889    8472083  4.54     0.2339      0.27        
+scale(coordinates.diffusion.rates266)             0.147   1868991    8477095  4.54     0.2342      0.27        
+scale(coordinates.diffusion.rates267)             0.171   1868395    8475368  4.54     0.234       0.23        
+scale(coordinates.diffusion.rates270)             0.166   1867504    8470650  4.54     0.2342      0.23        
+scale(coordinates.diffusion.rates281)             0.144   1868828    8476923  4.54     0.2343      0.24        
+scale(coordinates.diffusion.rates284)             0.115   1867662    10348173 5.54     0.2343      0.27        
+scale(coordinates.diffusion.rates289)             0.099   1868404    8477153  4.54     0.2343      0.25        
+scale(coordinates.diffusion.rates291)             0.106   1866148    8466753  4.54     0.2341      0.33        
+scale(coordinates.diffusion.rates294)             0.13    1867150    8471036  4.54     0.2338      0.2         
+scale(coordinates.diffusion.rates306)             0.152   1866082    9414522  5.05     0.2343      0.23        
+scale(coordinates.diffusion.rates308)             0.16    1868088    8474417  4.54     0.2342      0.23        
+scale(coordinates.diffusion.rates313)             0.118   1867580    8471588  4.54     0.2339      0.25        
+scale(coordinates.diffusion.rates321)             0.128   1871064    8489607  4.54     0.234       0.23        
+scale(coordinates.diffusion.rates323)             0.184   1866179    8467561  4.54     0.2339      0.14        
+scale(coordinates.diffusion.rates325)             0.135   1865765    8463157  4.54     0.2339      0.27        
+scale(coordinates.diffusion.rates329)             0.161   1866629    8467276  4.54     0.2343      0.23        
+scale(coordinates.diffusion.rates339)             0.094   1867757    10377102 5.56     0.2339      0.24        
+scale(coordinates.diffusion.rates341)             0.147   1866846    8467155  4.54     0.2341      0.22        
+scale(coordinates.diffusion.rates342)             0.15    1865403    8461870  4.54     0.234       0.26        
+scale(coordinates.diffusion.rates353)             0.147   1867106    8472420  4.54     0.2341      0.23        
+scale(coordinates.diffusion.rates354)             0.143   1864619    8459978  4.54     0.2339      0.22        
+scale(coordinates.diffusion.rates358)             0.124   1866494    8468184  4.54     0.2338      0.3         
+scale(coordinates.diffusion.rates359)             0.151   1868170    8475236  4.54     0.2339      0.19        
+scale(coordinates.diffusion.rates363)             0.125   1870324    8485263  4.54     0.2337      0.23        
+scale(coordinates.diffusion.rates369)             0.164   1867362    8471443  4.54     0.2342      0.23        
+scale(coordinates.diffusion.rates370)             0.151   1866860    8469803  4.54     0.2339      0.21        
+scale(coordinates.diffusion.rates375)             0.119   1869156    8480521  4.54     0.2337      0.3         
+scale(coordinates.diffusion.rates388)             0.16    1868182    8474162  4.54     0.2342      0.23        
+scale(coordinates.diffusion.rates392)             0.115   1867506    9444509  5.06     0.2337      0.22        
+scale(coordinates.diffusion.rates396)             0.152   1865381    8462580  4.54     0.2343      0.24        
+scale(coordinates.diffusion.rates398)             0.095   1867228    8473246  4.54     0.2338      0.23        
+scale(coordinates.diffusion.rates405)             0.125   1867804    9413407  5.04     0.2342      0.2         
+scale(coordinates.diffusion.rates406)             0.131   1867007    8469968  4.54     0.2341      0.23        
+scale(coordinates.diffusion.rates411)             0.114   1864797    8460899  4.54     0.2339      0.3         
+scale(coordinates.diffusion.rates413)             0.151   1867228    9383260  5.03     0.2342      0.24        
+scale(coordinates.diffusion.rates414)             0.152   1867178    8470200  4.54     0.234       0.2         
+scale(coordinates.diffusion.rates420)             0.133   1868897    8521065  4.56     0.2341      0.22        
+scale(coordinates.diffusion.rates421)             0.164   1865551    8464391  4.54     0.2339      0.21        
+scale(coordinates.diffusion.rates422)             0.114   1868632    9473963  5.07     0.2338      0.28        
+scale(coordinates.diffusion.rates424)             0.109   1866229    8467363  4.54     0.234       0.24        
+scale(coordinates.diffusion.rates435)             0.135   1868435    9402922  5.03     0.2341      0.21        
+scale(coordinates.diffusion.rates455)             0.13    1866976    8470268  4.54     0.234       0.22        
+scale(coordinates.diffusion.rates456)             0.126   1866189    9241396  4.95     0.234       0.25        
+scale(coordinates.diffusion.rates459)             0.123   1867312    8471022  4.54     0.2338      0.21        
+scale(coordinates.diffusion.rates461)             0.163   1870123    8484162  4.54     0.234       0.21        
+scale(coordinates.diffusion.rates463)             0.151   1867315    9405082  5.04     0.2341      0.24        
+scale(coordinates.diffusion.rates467)             0.12    1865621    8463289  4.54     0.2339      0.27        
+scale(coordinates.diffusion.rates470)             0.095   1867684    8472966  4.54     0.2339      0.24        
+scale(coordinates.diffusion.rates473)             0.124   1865783    10379783 5.56     0.234       0.31        
+scale(coordinates.diffusion.rates480)             0.142   1869105    8477906  4.54     0.234       0.26        
+scale(coordinates.diffusion.rates485)             0.119   1866202    8467207  4.54     0.2339      0.25        
+scale(coordinates.diffusion.rates495)             0.105   1866021    8462517  4.54     0.2338      0.25        
+scale(coordinates.diffusion.rates504)             0.11    1870634    9402497  5.03     0.2341      0.23        
+scale(coordinates.diffusion.rates505)             0.125   1865753    8464567  4.54     0.2338      0.24        
+scale(coordinates.diffusion.rates506)             0.143   1867879    8473770  4.54     0.2336      0.25        
+scale(coordinates.diffusion.rates507)             0.164   1863861    8452434  4.53     0.2343      0.21        
+scale(coordinates.diffusion.rates509)             0.177   1867958    8476722  4.54     0.234       0.2         
+scale(coordinates.diffusion.rates514)             0.145   1865484    8463155  4.54     0.2341      0.27        
+scale(coordinates.diffusion.rates516)             0.14    1866119    9425522  5.05     0.2343      0.22        
+scale(coordinates.diffusion.rates518)             0.14    1867071    8462230  4.53     0.2344      0.21        
+scale(coordinates.diffusion.rates521)             0.134   1866372    8468526  4.54     0.234       0.23        
+scale(coordinates.diffusion.rates523)             0.114   1866343    8468560  4.54     0.2341      0.2         
+scale(coordinates.diffusion.rates548)             0.113   1867552    8472376  4.54     0.2339      0.2         
+scale(coordinates.diffusion.rates561)             0.146   1869619    8480237  4.54     0.2339      0.18        
+scale(coordinates.diffusion.rates570)             0.127   1868889    8479118  4.54     0.2339      0.19        
+scale(coordinates.diffusion.rates575)             0.102   1866178    8465986  4.54     0.2342      0.27        
+scale(coordinates.diffusion.rates585)             0.125   1867310    8573655  4.59     0.234       0.28        
+scale(coordinates.diffusion.rates587)             0.149   1869345    9178389  4.91     0.234       0.25        
+scale(coordinates.diffusion.rates594)             0.143   1867620    8471318  4.54     0.2338      0.21        
+scale(coordinates.diffusion.rates595)             0.142   1868478    8459513  4.53     0.234       0.23        
+scale(coordinates.diffusion.rates596)             0.135   1870206    9406391  5.03     0.2343      0.18        
+scale(coordinates.diffusion.rates597)             0.106   1867462    8472517  4.54     0.2342      0.27        
+scale(coordinates.diffusion.rates601)             0.148   1869882    9432989  5.04     0.2337      0.21        
+scale(coordinates.diffusion.rates602)             0.136   1867839    10762431 5.76     0.2341      0.26        
+scale(coordinates.diffusion.rates617)             0.14    1867457    8473710  4.54     0.2342      0.2         
+scale(coordinates.diffusion.rates619)             0.132   1866996    8466209  4.53     0.234       0.23        
+scale(coordinates.diffusion.rates628)             0.13    1865114    8464938  4.54     0.2342      0.22        
+scale(coordinates.diffusion.rates629)             0.121   1865926    9393010  5.03     0.2343      0.24        
+scale(coordinates.diffusion.rates641)             0.157   1865836    8464289  4.54     0.2338      0.2         
+scale(coordinates.diffusion.rates642)             0.139   1865646    9414176  5.05     0.234       0.26        
+scale(coordinates.diffusion.rates645)             0.122   1867254    8470092  4.54     0.2339      0.2         
+scale(coordinates.diffusion.rates646)             0.116   1868623    8477122  4.54     0.2339      0.29        
+scale(coordinates.diffusion.rates654)             0.183   1866034    8466878  4.54     0.2338      0.18        
+scale(coordinates.diffusion.rates662)             0.176   1867173    8472569  4.54     0.234       0.27        
+scale(coordinates.diffusion.rates674)             0.16    1866507    9445274  5.06     0.2338      0.16        
+scale(coordinates.diffusion.rates677)             0.135   1866939    8471011  4.54     0.2341      0.26        
+scale(coordinates.diffusion.rates679)             0.146   1864835    9464146  5.08     0.2339      0.26        
+scale(coordinates.diffusion.rates682)             0.158   1868018    8475272  4.54     0.2341      0.28        
+scale(coordinates.diffusion.rates684)             0.137   1867939    9398243  5.03     0.2341      0.27        
+scale(coordinates.diffusion.rates685)             0.138   1867149    8472607  4.54     0.2343      0.27        
+scale(coordinates.diffusion.rates692)             0.143   1866987    8468847  4.54     0.2339      0.22        
+scale(coordinates.diffusion.rates697)             0.161   1863205    8454400  4.54     0.2339      0.23        
+scale(coordinates.diffusion.rates699)             0.12    1867401    8471668  4.54     0.234       0.25        
+scale(coordinates.diffusion.rates701)             0.135   1868350    8476181  4.54     0.2346      0.23        
+scale(coordinates.diffusion.rates702)             0.111   1866698    8468134  4.54     0.2342      0.28        
+scale(coordinates.diffusion.rates705)             0.122   1866018    9384792  5.03     0.234       0.24        
+scale(coordinates.diffusion.rates708)             0.119   1868720    8478087  4.54     0.2339      0.33        
+scale(coordinates.diffusion.rates715)             0.202   1869890    8483642  4.54     0.234       0.28        
+scale(coordinates.diffusion.rates717)             0.109   1867882    8472787  4.54     0.234       0.24        
+scale(coordinates.diffusion.rates718)             0.13    1867215    8471954  4.54     0.234       0.25        
+scale(coordinates.diffusion.rates721)             0.145   1869020    8477912  4.54     0.2339      0.24        
+scale(coordinates.diffusion.rates727)             0.095   1867376    8471821  4.54     0.2342      0.24        
+scale(coordinates.diffusion.rates730)             0.118   1868490    8474001  4.54     0.234       0.23        
+scale(coordinates.diffusion.rates732)             0.107   1869909    8482302  4.54     0.2342      0.23        
+scale(coordinates.diffusion.rates734)             0.106   1866248    9050174  4.85     0.2343      0.31        
+scale(coordinates.diffusion.rates736)             0.145   1866798    8467599  4.54     0.2342      0.23        
+scale(coordinates.diffusion.rates737)             0.115   1865952    8467501  4.54     0.2341      0.23        
+scale(coordinates.diffusion.rates742)             0.121   1868207    8475690  4.54     0.2341      0.22        
+scale(coordinates.diffusion.rates751)             0.11    1867312    8470502  4.54     0.234       0.29        
+scale(coordinates.diffusion.rates755)             0.11    1868044    9418269  5.04     0.2342      0.23        
+scale(coordinates.diffusion.rates758)             0.187   1865941    9386237  5.03     0.2342      0.2         
+scale(coordinates.diffusion.rates760)             0.127   1869126    9400876  5.03     0.2344      0.24        
+scale(coordinates.diffusion.rates761)             0.207   1865023    8462466  4.54     0.2339      0.21        
+scale(coordinates.diffusion.rates764)             0.133   1866696    8467892  4.54     0.2339      0.23        
+scale(coordinates.diffusion.rates765)             0.167   1867321    8470178  4.54     0.2338      0.17        
+scale(coordinates.diffusion.rates766)             0.15    1867458    8473844  4.54     0.2338      0.28        
+scale(coordinates.diffusion.rates769)             0.148   1867780    8473996  4.54     0.2343      0.25        
+scale(coordinates.diffusion.rates772)             0.123   1869658    8484603  4.54     0.234       0.23        
+scale(coordinates.diffusion.rates774)             0.116   1868301    8477646  4.54     0.2341      0.23        
+scale(coordinates.diffusion.rates780)             0.148   1867936    8477412  4.54     0.2338      0.24        
+scale(coordinates.diffusion.rates781)             0.159   1864598    8462971  4.54     0.2341      0.2         
+scale(coordinates.diffusion.rates784)             0.116   1867193    8471882  4.54     0.2341      0.28        
+scale(coordinates.diffusion.rates791)             0.122   1867663    8473489  4.54     0.2339      0.22        
+scale(coordinates.diffusion.rates792)             0.163   1867084    8471676  4.54     0.2345      0.21        
+scale(coordinates.diffusion.rates799)             0.13    1867462    9425709  5.05     0.2346      0.24        
+scale(coordinates.diffusion.rates809)             0.099   1867853    8474243  4.54     0.2344      0.25        
+scale(coordinates.diffusion.rates810)             0.123   1865570    8462596  4.54     0.2342      0.21        
+scale(coordinates.diffusion.rates814)             0.123   1868758    9489263  5.08     0.2338      0.3         
+scale(coordinates.diffusion.rates817)             0.145   1867673    8472025  4.54     0.2343      0.18        
+scale(coordinates.diffusion.rates818)             0.094   1866761    8468651  4.54     0.234       0.23        
+scale(coordinates.diffusion.rates819)             0.129   1865556    8440398  4.52     0.234       0.23        
+scale(coordinates.diffusion.rates827)             0.119   1869265    8480903  4.54     0.2339      0.29        
+scale(coordinates.diffusion.rates831)             0.127   1869812    8482113  4.54     0.2337      0.25        
+scale(coordinates.diffusion.rates832)             0.161   1868960    8477029  4.54     0.2341      0.21        
+scale(coordinates.diffusion.rates834)             0.116   1870318    8484897  4.54     0.2339      0.27        
+scale(coordinates.diffusion.rates835)             0.093   1865847    10418711 5.58     0.234       0.23        
+scale(coordinates.diffusion.rates838)             0.116   1866136    9463679  5.07     0.234       0.27        
+scale(coordinates.diffusion.rates842)             0.135   1867340    8472844  4.54     0.2339      0.19        
+scale(coordinates.diffusion.rates849)             0.121   1868116    8475490  4.54     0.2339      0.28        
+scale(coordinates.diffusion.rates850)             0.136   1866564    8470025  4.54     0.2341      0.31        
+scale(coordinates.diffusion.rates852)             0.149   1865995    9371629  5.02     0.2339      0.31        
+scale(coordinates.diffusion.rates855)             0.121   1868530    8477789  4.54     0.2341      0.29        
+scale(coordinates.diffusion.rates858)             0.124   1866219    8468316  4.54     0.234       0.24        
+scale(coordinates.diffusion.rates859)             0.116   1866857    9881642  5.29     0.2341      0.16        
+scale(coordinates.diffusion.rates862)             0.156   1865407    8463612  4.54     0.2342      0.26        
+scale(coordinates.diffusion.rates877)             0.134   1867501    8472606  4.54     0.234       0.26        
+scale(coordinates.diffusion.rates882)             0.1     1868095    8474426  4.54     0.2339      0.23        
+scale(coordinates.diffusion.rates886)             0.121   1867623    8470149  4.54     0.2339      0.23        
+scale(coordinates.diffusion.rates890)             0.115   1868987    9280294  4.97     0.2345      0.21        
+scale(coordinates.diffusion.rates892)             0.153   1868030    8471059  4.53     0.2343      0.26        
+scale(coordinates.diffusion.rates898)             0.146   1869538    9400965  5.03     0.234       0.31        
+scale(coordinates.diffusion.rates909)             0.134   1867297    9299477  4.98     0.2339      0.24        
+scale(coordinates.diffusion.rates910)             0.14    1869949    8484975  4.54     0.234       0.24        
+scale(coordinates.diffusion.rates911)             0.137   1867860    8474872  4.54     0.2337      0.23        
+scale(coordinates.diffusion.rates914)             0.12    1864940    9379953  5.03     0.2337      0.25        
+scale(coordinates.diffusion.rates920)             0.118   1866833    9412682  5.04     0.2338      0.26        
+scale(coordinates.diffusion.rates926)             0.129   1869204    8479296  4.54     0.2339      0.29        
+scale(coordinates.diffusion.rates937)             0.151   1868994    8477718  4.54     0.2339      0.26        
+scale(coordinates.diffusion.rates939)             0.115   1866757    8467364  4.54     0.2336      0.26        
+scale(coordinates.diffusion.rates941)             0.139   1868651    9489971  5.08     0.234       0.16        
+scale(coordinates.diffusion.rates944)             0.131   1866701    8470651  4.54     0.2341      0.29        
+scale(coordinates.diffusion.rates945)             0.117   1866405    8466500  4.54     0.2344      0.17        
+scale(coordinates.diffusion.rates949)             0.135   1865871    8465691  4.54     0.2341      0.25        
+scale(coordinates.diffusion.rates950)             0.155   1868140    8474213  4.54     0.234       0.21        
+scale(coordinates.diffusion.rates951)             0.13    1865874    8465442  4.54     0.2337      0.24        
+scale(coordinates.diffusion.rates953)             0.12    1867418    9383496  5.02     0.2338      0.23        
+scale(coordinates.diffusion.rates957)             0.089   1870105    9251364  4.95     0.2341      0.21        
+scale(coordinates.diffusion.rates968)             0.153   1866692    9331473  5.0      0.2339      0.23        
+scale(coordinates.diffusion.rates969)             0.119   1868637    8447069  4.52     0.2343      0.25        
+scale(coordinates.diffusion.rates971)             0.132   1868704    9529660  5.1      0.2342      0.18        
+scale(coordinates.diffusion.rates976)             0.144   1867673    8472900  4.54     0.234       0.26        
+scale(coordinates.diffusion.rates978)             0.129   1865338    8463056  4.54     0.2338      0.22        
+scale(coordinates.diffusion.rates989)             0.116   1867086    8472448  4.54     0.2342      0.28        
+scale(coordinates.diffusion.rates1000)            0.12    1865797    8466937  4.54     0.2341      0.23        
+scale(coordinates.diffusion.rates1006)            0.163   1868391    8475744  4.54     0.234       0.22        
+scale(coordinates.diffusion.rates1014)            0.135   1868086    8472429  4.54     0.2343      0.22        
+scale(coordinates.diffusion.rates1018)            0.123   1866285    9426362  5.05     0.2338      0.29        
+scale(coordinates.diffusion.rates1023)            0.151   1867708    8473847  4.54     0.2339      0.23        
+scale(coordinates.diffusion.rates1025)            0.09    1866680    9388267  5.03     0.2337      0.32        
+scale(coordinates.diffusion.rates1026)            0.153   1868147    10384762 5.56     0.2338      0.27        
+scale(coordinates.diffusion.rates1034)            0.12    1866690    8469552  4.54     0.2337      0.19        
+scale(coordinates.diffusion.rates1035)            0.159   1866929    8468293  4.54     0.2343      0.26        
+scale(coordinates.diffusion.rates1037)            0.154   1866548    8467479  4.54     0.2339      0.23        
+scale(coordinates.diffusion.rates1038)            0.138   1868617    8554066  4.58     0.2339      0.27        
+scale(coordinates.diffusion.rates1044)            0.122   1869214    9444562  5.05     0.2341      0.17        
+scale(coordinates.diffusion.rates1048)            0.145   1870410    8484898  4.54     0.2341      0.25        
+scale(coordinates.diffusion.rates1049)            0.171   1869646    8482838  4.54     0.2344      0.18        
+scale(coordinates.diffusion.rates1050)            0.167   1865701    9327134  5.0      0.2338      0.2         
+scale(coordinates.diffusion.rates1054)            0.135   1867604    10066522 5.39     0.2342      0.2         
+scale(coordinates.diffusion.rates1059)            0.131   1866053    9372247  5.02     0.2342      0.2         
+scale(coordinates.diffusion.rates1064)            0.134   1867143    8470319  4.54     0.2341      0.26        
+scale(coordinates.diffusion.rates1071)            0.132   1865338    9403136  5.04     0.234       0.27        
+scale(coordinates.diffusion.rates1075)            0.132   1869014    8477746  4.54     0.2339      0.18        
+scale(coordinates.diffusion.rates1082)            0.133   1866816    8468718  4.54     0.2341      0.32        
+scale(coordinates.diffusion.rates1084)            0.166   1866626    8467096  4.54     0.2339      0.24        
+scale(coordinates.diffusion.rates1087)            0.133   1868790    8475875  4.54     0.2342      0.22        
+scale(coordinates.diffusion.rates1089)            0.174   1868937    8480458  4.54     0.2338      0.21        
+scale(coordinates.diffusion.rates1091)            0.137   1866523    8467082  4.54     0.2338      0.28        
+scale(coordinates.diffusion.rates1093)            0.139   1868395    8475769  4.54     0.234       0.24        
+scale(coordinates.diffusion.rates1095)            0.124   1869414    9389094  5.02     0.2339      0.23        
+scale(coordinates.diffusion.rates1101)            0.154   1868120    8476351  4.54     0.2338      0.18        
+scale(coordinates.diffusion.rates1108)            0.121   1869212    8479870  4.54     0.2338      0.26        
+scale(coordinates.diffusion.rates1109)            0.143   1865581    8466002  4.54     0.2338      0.13        
+scale(coordinates.diffusion.rates1114)            0.147   1864685    8461710  4.54     0.2339      0.23        
+scale(coordinates.diffusion.rates1116)            0.167   1866879    8470177  4.54     0.2339      0.25        
+scale(coordinates.diffusion.rates1125)            0.143   1866894    8465519  4.53     0.234       0.22        
+scale(coordinates.diffusion.rates1126)            0.175   1866814    8625159  4.62     0.2341      0.22        
+scale(coordinates.diffusion.rates1127)            0.151   1867779    8472588  4.54     0.2338      0.23        
+scale(coordinates.diffusion.rates1133)            0.14    1868271    8475792  4.54     0.2341      0.2         
+scale(coordinates.diffusion.rates1150)            0.096   1869160    9497447  5.08     0.2341      0.24        
+scale(coordinates.diffusion.rates1151)            0.176   1866429    8708130  4.67     0.2342      0.19        
+scale(coordinates.diffusion.rates1152)            0.127   1868161    8476172  4.54     0.234       0.19        
+scale(coordinates.diffusion.rates1160)            0.098   1868399    8898015  4.76     0.2342      0.25        
+scale(coordinates.diffusion.rates1161)            0.168   1869535    8473386  4.53     0.2339      0.2         
+scale(coordinates.diffusion.rates1169)            0.14    1865298    8460852  4.54     0.2339      0.29        
+scale(coordinates.diffusion.rates1170)            0.131   1867314    8470655  4.54     0.2338      0.24        
+scale(coordinates.diffusion.rates1173)            0.115   1866466    8468090  4.54     0.2342      0.21        
+scale(coordinates.diffusion.rates1175)            0.111   1868253    8475069  4.54     0.2342      0.27        
+scale(coordinates.diffusion.rates1180)            0.132   1870462    8483077  4.54     0.2337      0.23        
+scale(coordinates.diffusion.rates1186)            0.138   1866961    8471043  4.54     0.2341      0.26        
+scale(coordinates.diffusion.rates1189)            0.133   1866662    8465986  4.54     0.2342      0.2         
+scale(coordinates.diffusion.rates1192)            0.117   1867521    10426691 5.58     0.2338      0.21        
+scale(coordinates.diffusion.rates1193)            0.096   1866061    8466188  4.54     0.2343      0.28        
+scale(coordinates.diffusion.rates1196)            0.124   1866947    8539481  4.57     0.2343      0.2         
+scale(coordinates.diffusion.rates1197)            0.156   1869550    8481049  4.54     0.2341      0.3         
+scale(coordinates.diffusion.rates1198)            0.129   1865696    9373513  5.02     0.2342      0.24        
+scale(coordinates.diffusion.rates1208)            0.158   1868161    8473985  4.54     0.2337      0.23        
+scale(coordinates.diffusion.rates1211)            0.121   1867700    8470302  4.54     0.2341      0.33        
+scale(coordinates.diffusion.rates1215)            0.132   1867050    8451710  4.53     0.2339      0.21        
+scale(coordinates.diffusion.rates1216)            0.123   1867963    8463243  4.53     0.2338      0.23        
+scale(coordinates.diffusion.rates1222)            0.139   1869222    8479707  4.54     0.2341      0.19        
+scale(coordinates.diffusion.rates1224)            0.138   1866739    8469419  4.54     0.2341      0.25        
+scale(coordinates.diffusion.rates1225)            0.163   1868597    8478825  4.54     0.234       0.22        
+scale(coordinates.diffusion.rates1226)            0.132   1869066    8477648  4.54     0.2339      0.2         
+scale(coordinates.diffusion.rates1228)            0.152   1869100    8480937  4.54     0.234       0.25        
+scale(coordinates.diffusion.rates1234)            0.123   1866859    8468194  4.54     0.234       0.26        
+scale(coordinates.diffusion.rates1235)            0.164   1867188    9390296  5.03     0.2344      0.23        
+scale(coordinates.diffusion.rates1236)            0.182   1867901    8473898  4.54     0.2341      0.2         
+scale(coordinates.diffusion.rates1242)            0.142   1870006    8484707  4.54     0.234       0.25        
+scale(coordinates.diffusion.rates1244)            0.091   1867217    8469343  4.54     0.234       0.33        
+scale(coordinates.diffusion.rates1245)            0.173   1867894    8474761  4.54     0.2339      0.22        
+scale(coordinates.diffusion.rates1247)            0.139   1868074    8476181  4.54     0.2343      0.26        
+scale(coordinates.diffusion.rates1250)            0.159   1867608    8472833  4.54     0.2342      0.19        
+scale(coordinates.diffusion.rates1254)            0.138   1866636    8467611  4.54     0.2341      0.27        
+scale(coordinates.diffusion.rates1257)            0.14    1868978    8479744  4.54     0.2343      0.23        
+scale(coordinates.diffusion.rates1258)            0.115   1868156    8475734  4.54     0.2337      0.26        
+scale(coordinates.diffusion.rates1271)            0.127   1866671    8467479  4.54     0.2342      0.24        
+scale(coordinates.diffusion.rates1272)            0.14    1866928    8468966  4.54     0.234       0.27        
+scale(coordinates.diffusion.rates1282)            0.125   1867009    8468094  4.54     0.2339      0.26        
+scale(coordinates.diffusion.rates1283)            0.145   1866643    8469158  4.54     0.2341      0.21        
+scale(coordinates.diffusion.rates1285)            0.109   1866563    8469549  4.54     0.2341      0.16        
+scale(coordinates.diffusion.rates1287)            0.129   1867968    9406581  5.04     0.234       0.19        
+scale(coordinates.diffusion.rates1288)            0.127   1867493    8471646  4.54     0.2341      0.27        
+scale(coordinates.diffusion.rates1292)            0.169   1867357    8473062  4.54     0.2343      0.27        
+scale(coordinates.diffusion.rates1295)            0.127   1866209    8466896  4.54     0.2341      0.24        
+scale(coordinates.diffusion.rates1299)            0.158   1867438    9376116  5.02     0.2342      0.16        
+scale(coordinates.diffusion.rates1304)            0.163   1867117    8473047  4.54     0.2342      0.2         
+scale(coordinates.diffusion.rates1310)            0.132   1868687    9417013  5.04     0.2339      0.24        
+scale(coordinates.diffusion.rates1321)            0.155   1864884    8460463  4.54     0.2337      0.26        
+scale(coordinates.diffusion.rates1329)            0.174   1868226    8476878  4.54     0.234       0.24        
+scale(coordinates.diffusion.rates1330)            0.159   1868347    9406141  5.03     0.2338      0.2         
+scale(coordinates.diffusion.rates1332)            0.101   1866376    8467761  4.54     0.234       0.26        
+scale(coordinates.diffusion.rates1333)            0.127   1867808    10374692 5.55     0.2342      0.3         
+scale(coordinates.diffusion.rates1338)            0.17    1869537    10385383 5.56     0.2336      0.22        
+scale(coordinates.diffusion.rates1344)            0.131   1868100    9499160  5.08     0.234       0.24        
+scale(coordinates.diffusion.rates1355)            0.167   1868048    8475843  4.54     0.2341      0.24        
+scale(coordinates.diffusion.rates1358)            0.16    1867182    8471375  4.54     0.2343      0.26        
+scale(coordinates.diffusion.rates1360)            0.166   1866642    8467049  4.54     0.2341      0.23        
+scale(coordinates.diffusion.rates1362)            0.14    1867856    9416136  5.04     0.2339      0.24        
+scale(coordinates.diffusion.rates1364)            0.13    1869086    8480207  4.54     0.2341      0.26        
+scale(coordinates.diffusion.rates1375)            0.106   1866975    8469041  4.54     0.2341      0.31        
+scale(coordinates.diffusion.rates1379)            0.143   1866167    8468753  4.54     0.2341      0.27        
+scale(coordinates.diffusion.rates1381)            0.111   1866634    8470133  4.54     0.234       0.22        
+scale(coordinates.diffusion.rates1384)            0.182   1870461    8487067  4.54     0.2341      0.18        
+scale(coordinates.diffusion.rates1388)            0.156   1867458    8471771  4.54     0.234       0.23        
+scale(coordinates.diffusion.rates1397)            0.126   1867358    8472317  4.54     0.2339      0.21        
+scale(coordinates.diffusion.rates1401)            0.169   1867300    9415899  5.04     0.2337      0.23        
+scale(coordinates.diffusion.rates1412)            0.146   1868642    8467266  4.53     0.2341      0.23        
+scale(coordinates.diffusion.rates1416)            0.166   1867268    9437867  5.05     0.2342      0.21        
+scale(coordinates.diffusion.rates1426)            0.137   1867636    8473484  4.54     0.2341      0.25        
+scale(coordinates.diffusion.rates1432)            0.13    1869034    9392526  5.03     0.234       0.24        
+scale(coordinates.diffusion.rates1445)            0.122   1867549    8471623  4.54     0.234       0.2         
+scale(coordinates.diffusion.rates1447)            0.109   1867759    9453992  5.06     0.2339      0.23        
+scale(coordinates.diffusion.rates1448)            0.153   1865203    9369322  5.02     0.2339      0.22        
+scale(coordinates.diffusion.rates1449)            0.172   1867816    8469234  4.53     0.2339      0.18        
+scale(coordinates.diffusion.rates1452)            0.132   1866278    8468576  4.54     0.2343      0.3         
+scale(coordinates.diffusion.rates1454)            0.165   1867898    8473023  4.54     0.2342      0.17        
+scale(coordinates.diffusion.rates1457)            0.143   1867767    8468261  4.53     0.2339      0.27        
+scale(coordinates.diffusion.rates1473)            0.157   1866479    8467979  4.54     0.2339      0.18        
+scale(coordinates.diffusion.rates1481)            0.124   1868495    9441321  5.05     0.234       0.22        
+scale(coordinates.diffusion.rates1482)            0.114   1867448    8473248  4.54     0.234       0.26        
+scale(coordinates.diffusion.rates1483)            0.1     1865618    8463824  4.54     0.234       0.22        
+scale(coordinates.diffusion.rates1484)            0.142   1869002    8480002  4.54     0.2338      0.23        
+scale(coordinates.diffusion.rates1486)            0.135   1867472    9378424  5.02     0.2338      0.23        
+scale(coordinates.diffusion.rates1487)            0.176   1866547    8466866  4.54     0.2342      0.23        
+scale(coordinates.diffusion.rates1488)            0.131   1866336    8467376  4.54     0.2341      0.26        
+scale(coordinates.diffusion.rates1493)            0.135   1867650    8473142  4.54     0.234       0.28        
+scale(coordinates.diffusion.rates1498)            0.16    1866353    8467897  4.54     0.2342      0.22        
+scale(coordinates.diffusion.rates1502)            0.131   1867697    9398963  5.03     0.2342      0.24        
+scale(coordinates.diffusion.rates1503)            0.133   1867197    9478620  5.08     0.234       0.23        
+scale(coordinates.diffusion.rates1505)            0.088   1866499    8467210  4.54     0.2338      0.28        
+scale(coordinates.diffusion.rates1507)            0.162   1865034    8462537  4.54     0.2339      0.27        
+scale(coordinates.diffusion.rates1508)            0.109   1866393    8467569  4.54     0.2345      0.22        
+scale(coordinates.diffusion.rates1511)            0.111   1869564    8480878  4.54     0.2341      0.21        
+scale(coordinates.diffusion.rates1513)            0.12    1869984    9421603  5.04     0.2343      0.27        
+scale(coordinates.diffusion.rates1518)            0.135   1866984    9421987  5.05     0.2341      0.22        
+scale(coordinates.diffusion.rates1521)            0.136   1867290    8469864  4.54     0.2339      0.26        
+scale(coordinates.diffusion.rates1522)            0.148   1869291    8482178  4.54     0.2338      0.21        
+scale(coordinates.diffusion.rates1524)            0.136   1869793    9425368  5.04     0.234       0.22        
+scale(coordinates.diffusion.rates1525)            0.124   1869824    8483331  4.54     0.2339      0.28        
+scale(coordinates.diffusion.rates1530)            0.138   1866751    8468602  4.54     0.2339      0.25        
+scale(coordinates.diffusion.rates1533)            0.131   1868621    8477859  4.54     0.2342      0.21        
+scale(coordinates.diffusion.rates1546)            0.122   1866900    8469113  4.54     0.2342      0.25        
+scale(coordinates.diffusion.rates1549)            0.165   1865874    8465106  4.54     0.2341      0.2         
+scale(coordinates.diffusion.rates1550)            0.119   1868790    9389887  5.02     0.2339      0.27        
+scale(coordinates.diffusion.rates1551)            0.139   1868707    8479406  4.54     0.2341      0.27        
+scale(coordinates.diffusion.rates1555)            0.146   1868726    9486950  5.08     0.2341      0.24        
+scale(coordinates.diffusion.rates1567)            0.142   1868548    9475875  5.07     0.2339      0.2         
+scale(coordinates.diffusion.rates1576)            0.123   1866350    8467196  4.54     0.2342      0.29        
+scale(coordinates.diffusion.rates1583)            0.134   1865685    8500211  4.56     0.234       0.23        
+scale(coordinates.diffusion.rates1584)            0.135   1866334    9439689  5.06     0.2341      0.23        
+scale(coordinates.diffusion.rates1585)            0.119   1867388    9146409  4.9      0.234       0.28        
+scale(coordinates.diffusion.rates1587)            0.178   1869503    8482992  4.54     0.2337      0.24        
+scale(coordinates.diffusion.rates1589)            0.165   1867671    8475458  4.54     0.2341      0.24        
+scale(coordinates.diffusion.rates1590)            0.137   1868549    8477520  4.54     0.2339      0.27        
+scale(coordinates.diffusion.rates1591)            0.142   1866435    8468251  4.54     0.234       0.23        
+scale(coordinates.diffusion.rates1592)            0.147   1867442    8476472  4.54     0.2341      0.28        
+scale(coordinates.diffusion.rates1594)            0.128   1870082    8482095  4.54     0.2341      0.25        
+scale(coordinates.diffusion.rates1595)            0.176   1867642    8474052  4.54     0.234       0.18        
+scale(coordinates.diffusion.rates1598)            0.13    1866270    9418246  5.05     0.2337      0.26        
+scale(coordinates.diffusion.rates1600)            0.13    1868068    9401009  5.03     0.2341      0.21        
+scale(coordinates.diffusion.rates1602)            0.16    1866922    9394715  5.03     0.2341      0.25        
+scale(coordinates.diffusion.rates1603)            0.11    1867284    8973079  4.81     0.2343      0.33        
+scale(coordinates.diffusion.rates1604)            0.116   1868426    8483547  4.54     0.2336      0.24        
+scale(coordinates.diffusion.rates1607)            0.151   1863010    9431739  5.06     0.234       0.22        
+scale(coordinates.diffusion.rates1619)            0.111   1867592    8476278  4.54     0.2342      0.25        
+scale(coordinates.diffusion.rates1622)            0.132   1867376    8472182  4.54     0.2339      0.23        
+scale(coordinates.diffusion.rates1623)            0.159   1867987    9424308  5.05     0.2339      0.23        
+scale(coordinates.diffusion.rates1624)            0.13    1866895    8471342  4.54     0.2337      0.26        
+scale(coordinates.diffusion.rates1625)            0.138   1868456    8478570  4.54     0.2337      0.24        
+scale(coordinates.diffusion.rates1630)            0.123   1869563    8481655  4.54     0.2337      0.28        
+scale(coordinates.diffusion.rates1631)            0.103   1867985    8476538  4.54     0.2339      0.22        
+scale(coordinates.diffusion.rates1632)            0.156   1865183    8462812  4.54     0.234       0.22        
+scale(coordinates.diffusion.rates1633)            0.161   1867026    8471492  4.54     0.2342      0.22        
+scale(coordinates.diffusion.rates1635)            0.121   1868060    8477054  4.54     0.2337      0.27        
+scale(coordinates.diffusion.rates1644)            0.128   1866851    8471339  4.54     0.2343      0.29        
+scale(coordinates.diffusion.rates1645)            0.17    1867429    8474569  4.54     0.2343      0.18        
+scale(coordinates.diffusion.rates1649)            0.12    1866711    8471599  4.54     0.2338      0.2         
+scale(coordinates.diffusion.rates1652)            0.187   1864728    8459731  4.54     0.2341      0.2         
+scale(coordinates.diffusion.rates1655)            0.142   1867112    9498686  5.09     0.2342      0.23        
+scale(coordinates.diffusion.rates1659)            0.111   1868018    8474338  4.54     0.2339      0.24        
+scale(coordinates.diffusion.rates1660)            0.137   1867688    8474704  4.54     0.234       0.26        
+scale(coordinates.diffusion.rates1661)            0.173   1867601    8473250  4.54     0.2342      0.22        
+scale(coordinates.diffusion.rates1662)            0.12    1869976    8486425  4.54     0.234       0.26        
+scale(coordinates.diffusion.rates1666)            0.162   1868171    9440931  5.05     0.2341      0.28        
+scale(coordinates.diffusion.rates1673)            0.225   1867217    8473013  4.54     0.2339      0.17        
+scale(coordinates.diffusion.rates1675)            0.151   1867102    9412696  5.04     0.2338      0.28        
+scale(coordinates.diffusion.rates1691)            0.117   1869437    8482424  4.54     0.2342      0.25        
+scale(coordinates.diffusion.rates1692)            0.129   1867214    8486110  4.54     0.2344      0.25        
+scale(coordinates.diffusion.rates1719)            0.121   1866472    9438262  5.06     0.2338      0.2         
+scale(coordinates.diffusion.rates1725)            0.11    1868479    8477708  4.54     0.2339      0.29        
+scale(coordinates.diffusion.rates1732)            0.107   1868317    9397419  5.03     0.234       0.23        
+scale(coordinates.diffusion.rates1733)            0.101   1868868    8480990  4.54     0.2342      0.24        
+scale(coordinates.diffusion.rates1737)            0.118   1866323    8469236  4.54     0.2338      0.3         
+scale(coordinates.diffusion.rates1742)            0.133   1863560    9401769  5.05     0.2338      0.27        
+scale(coordinates.diffusion.rates1749)            0.158   1868376    9420776  5.04     0.2342      0.19        
+scale(coordinates.diffusion.rates1752)            0.133   1866613    8471624  4.54     0.2339      0.26        
+scale(coordinates.diffusion.rates1757)            0.124   1867088    8473962  4.54     0.2339      0.23        
+scale(coordinates.diffusion.rates1758)            0.127   1867644    8474591  4.54     0.2341      0.26        
+scale(coordinates.diffusion.rates1770)            0.141   1867102    8472086  4.54     0.2343      0.25        
+scale(coordinates.diffusion.rates1775)            0.105   1865280    9452570  5.07     0.2337      0.23        
+scale(coordinates.diffusion.rates1778)            0.168   1867493    8475551  4.54     0.234       0.22        
+scale(coordinates.diffusion.rates1781)            0.151   1865374    8466173  4.54     0.234       0.21        
+scale(coordinates.diffusion.rates1785)            0.134   1867836    8475556  4.54     0.2341      0.24        
+scale(coordinates.diffusion.rates1788)            0.165   1867561    8474466  4.54     0.2341      0.23        
+scale(coordinates.diffusion.rates1791)            0.163   1865025    8466021  4.54     0.2338      0.21        
+scale(coordinates.diffusion.rates1796)            0.133   1868668    9418554  5.04     0.2341      0.19        
+scale(coordinates.diffusion.rates1797)            0.155   1862891    8452575  4.54     0.2344      0.21        
+scale(coordinates.diffusion.rates1799)            0.134   1867915    8478257  4.54     0.2343      0.31        
+scale(coordinates.diffusion.rates1804)            0.151   1866339    8472017  4.54     0.234       0.23        
+scale(coordinates.diffusion.rates1807)            0.085   1866379    9440304  5.06     0.2338      0.27        
+scale(coordinates.diffusion.rates1812)            0.088   1867601    8476302  4.54     0.234       0.28        
+scale(coordinates.diffusion.rates1817)            0.158   1866269    9434909  5.06     0.2339      0.26        
+scale(coordinates.diffusion.rates1831)            0.1     1869813    8484298  4.54     0.2339      0.33        
+scale(coordinates.diffusion.rates1832)            0.097   1867888    8484447  4.54     0.2339      0.29        
+scale(coordinates.diffusion.rates1833)            0.125   1869195    8485026  4.54     0.2342      0.15        
+scale(coordinates.diffusion.rates1839)            0.123   1869837    8488792  4.54     0.2338      0.26        
+scale(coordinates.diffusion.rates1843)            0.095   1865271    8469735  4.54     0.2341      0.24        
+scale(coordinates.diffusion.rates1845)            0.125   1867879    8480061  4.54     0.2339      0.25        
+scale(coordinates.diffusion.rates1849)            0.146   1867474    8475132  4.54     0.234       0.29        
+scale(coordinates.diffusion.rates1854)            0.142   1867803    8477658  4.54     0.2338      0.27        
+scale(coordinates.diffusion.rates1862)            0.16    1867248    8478486  4.54     0.2342      0.24        
+scale(coordinates.diffusion.rates1868)            0.104   1866593    8473843  4.54     0.234       0.3         
+scale(coordinates.diffusion.rates1870)            0.15    1868302    8478993  4.54     0.2343      0.21        
+scale(coordinates.diffusion.rates1877)            0.135   1866169    8472365  4.54     0.2343      0.18        
+scale(coordinates.diffusion.rates1888)            0.19    1866854    9513179  5.1      0.2338      0.18        
+scale(coordinates.diffusion.rates1890)            0.114   1866292    8471885  4.54     0.234       0.26        
+scale(coordinates.diffusion.rates1902)            0.122   1866906    8475099  4.54     0.2339      0.23        
+scale(coordinates.diffusion.rates1903)            0.118   1868196    8480627  4.54     0.2341      0.22        
+scale(coordinates.diffusion.rates1906)            0.146   1867705    9416421  5.04     0.234       0.19        
+scale(coordinates.diffusion.rates1907)            0.107   1866869    8475438  4.54     0.2344      0.19        
+scale(coordinates.diffusion.rates1911)            0.148   1866766    8482307  4.54     0.2341      0.28        
+scale(coordinates.diffusion.rates1914)            0.115   1868481    9458348  5.06     0.2337      0.22        
+scale(coordinates.diffusion.rates1915)            0.148   1865782    8471599  4.54     0.2343      0.24        
+scale(coordinates.diffusion.rates1918)            0.146   1869118    8486617  4.54     0.2343      0.24        
+scale(coordinates.diffusion.rates1920)            0.103   1868504    8484001  4.54     0.2338      0.22        
+scale(coordinates.diffusion.rates1924)            0.146   1870023    9395533  5.02     0.2339      0.28        
+scale(coordinates.diffusion.rates1928)            0.119   1870049    9422317  5.04     0.2338      0.19        
+scale(coordinates.diffusion.rates1934)            0.128   1866793    8477284  4.54     0.234       0.14        
+scale(coordinates.diffusion.rates1935)            0.154   1869437    8488592  4.54     0.2337      0.24        
+scale(coordinates.diffusion.rates1937)            0.125   1868615    8484977  4.54     0.2339      0.26        
+scale(coordinates.diffusion.rates1938)            0.111   1866106    9447179  5.06     0.2343      0.26        
+scale(coordinates.diffusion.rates1940)            0.103   1867892    8482685  4.54     0.2342      0.27        
+scale(coordinates.diffusion.rates1953)            0.117   1865816    8475068  4.54     0.2342      0.23        
+precisionGibbsOperator                                    124613     706624   5.67     1.0         1.0         
+precisionGibbsOperator                                    124230     704864   5.67     1.0         1.0         
+precisionGibbsOperator                                    124405     705354   5.67     1.0         1.0         
+precisionGibbsOperator                                    124976     708596   5.67     1.0         1.0         
+precisionGibbsOperator                                    124909     708905   5.68     1.0         1.0         
+precisionGibbsOperator                                    124122     703645   5.67     1.0         1.0         
+precisionGibbsOperator                                    124858     708179   5.67     1.0         1.0         
+precisionGibbsOperator                                    124871     707880   5.67     1.0         1.0         
+precisionGibbsOperator                                    124411     705735   5.67     1.0         1.0         
+precisionGibbsOperator                                    124432     705609   5.67     1.0         1.0         
+precisionGibbsOperator                                    124208     704891   5.68     1.0         1.0         
+precisionGibbsOperator                                    123977     703748   5.68     1.0         1.0         
+precisionGibbsOperator                                    124531     706407   5.67     1.0         1.0         
+precisionGibbsOperator                                    124169     704618   5.67     1.0         1.0         
+precisionGibbsOperator                                    124755     707436   5.67     1.0         1.0         
+precisionGibbsOperator                                    124623     706721   5.67     1.0         1.0         
+precisionGibbsOperator                                    124398     706375   5.68     1.0         1.0         
+precisionGibbsOperator                                    124435     705982   5.67     1.0         1.0         
+precisionGibbsOperator                                    124837     708561   5.68     1.0         1.0         
+precisionGibbsOperator                                    124190     704261   5.67     1.0         1.0         
+precisionGibbsOperator                                    124458     706418   5.68     1.0         1.0         
+precisionGibbsOperator                                    124352     705486   5.67     1.0         1.0         
+precisionGibbsOperator                                    125132     710213   5.68     1.0         1.0         
+precisionGibbsOperator                                    125243     710405   5.67     1.0         1.0         
+precisionGibbsOperator                                    124712     707415   5.67     1.0         1.0         
+precisionGibbsOperator                                    124535     1661503  13.34    1.0         1.0         
+precisionGibbsOperator                                    124084     703865   5.67     1.0         1.0         
+precisionGibbsOperator                                    124265     1656891  13.33    1.0         1.0         
+precisionGibbsOperator                                    123908     702793   5.67     1.0         1.0         
+precisionGibbsOperator                                    124539     706481   5.67     1.0         1.0         
+precisionGibbsOperator                                    124166     704689   5.68     1.0         1.0         
+precisionGibbsOperator                                    124572     706382   5.67     1.0         1.0         
+precisionGibbsOperator                                    124727     707906   5.68     1.0         1.0         
+precisionGibbsOperator                                    124363     705782   5.68     1.0         1.0         
+precisionGibbsOperator                                    123638     701518   5.67     1.0         1.0         
+precisionGibbsOperator                                    123842     702821   5.68     1.0         1.0         
+precisionGibbsOperator                                    124284     704880   5.67     1.0         1.0         
+precisionGibbsOperator                                    124924     708066   5.67     1.0         1.0         
+precisionGibbsOperator                                    124617     707050   5.67     1.0         1.0         
+precisionGibbsOperator                                    124471     705872   5.67     1.0         1.0         
+precisionGibbsOperator                                    124479     705893   5.67     1.0         1.0         
+precisionGibbsOperator                                    125067     709783   5.68     1.0         1.0         
+precisionGibbsOperator                                    124403     706046   5.68     1.0         1.0         
+precisionGibbsOperator                                    124674     707259   5.67     1.0         1.0         
+precisionGibbsOperator                                    123953     703014   5.67     1.0         1.0         
+precisionGibbsOperator                                    124125     703909   5.67     1.0         1.0         
+precisionGibbsOperator                                    124786     707939   5.67     1.0         1.0         
+precisionGibbsOperator                                    124249     703771   5.66     1.0         1.0         
+precisionGibbsOperator                                    124408     705417   5.67     1.0         1.0         
+precisionGibbsOperator                                    124011     703407   5.67     1.0         1.0         
+precisionGibbsOperator                                    124213     704943   5.68     1.0         1.0         
+precisionGibbsOperator                                    124030     703767   5.67     1.0         1.0         
+precisionGibbsOperator                                    124591     706979   5.67     1.0         1.0         
+precisionGibbsOperator                                    124889     708017   5.67     1.0         1.0         
+precisionGibbsOperator                                    123833     703417   5.68     1.0         1.0         
+precisionGibbsOperator                                    124784     707869   5.67     1.0         1.0         
+precisionGibbsOperator                                    124477     706240   5.67     1.0         1.0         
+precisionGibbsOperator                                    123972     703354   5.67     1.0         1.0         
+precisionGibbsOperator                                    124342     705362   5.67     1.0         1.0         
+precisionGibbsOperator                                    124714     707562   5.67     1.0         1.0         
+precisionGibbsOperator                                    124447     706186   5.67     1.0         1.0         
+precisionGibbsOperator                                    124460     705839   5.67     1.0         1.0         
+precisionGibbsOperator                                    124874     708405   5.67     1.0         1.0         
+precisionGibbsOperator                                    124773     707097   5.67     1.0         1.0         
+precisionGibbsOperator                                    124288     704765   5.67     1.0         1.0         
+precisionGibbsOperator                                    124608     706646   5.67     1.0         1.0         
+precisionGibbsOperator                                    124669     707423   5.67     1.0         1.0         
+precisionGibbsOperator                                    124274     705191   5.67     1.0         1.0         
+precisionGibbsOperator                                    124640     706806   5.67     1.0         1.0         
+precisionGibbsOperator                                    124106     703913   5.67     1.0         1.0         
+precisionGibbsOperator                                    124700     707434   5.67     1.0         1.0         
+precisionGibbsOperator                                    124299     1764765  14.2     1.0         1.0         
+precisionGibbsOperator                                    124383     705225   5.67     1.0         1.0         
+precisionGibbsOperator                                    123863     702855   5.67     1.0         1.0         
+precisionGibbsOperator                                    124351     704782   5.67     1.0         1.0         
+precisionGibbsOperator                                    124762     707886   5.67     1.0         1.0         
+precisionGibbsOperator                                    124233     704184   5.67     1.0         1.0         
+precisionGibbsOperator                                    124973     709100   5.67     1.0         1.0         
+precisionGibbsOperator                                    124683     707529   5.67     1.0         1.0         
+precisionGibbsOperator                                    124538     706206   5.67     1.0         1.0         
+precisionGibbsOperator                                    124172     704212   5.67     1.0         1.0         
+precisionGibbsOperator                                    124295     705339   5.67     1.0         1.0         
+precisionGibbsOperator                                    124490     706853   5.68     1.0         1.0         
+precisionGibbsOperator                                    124444     705654   5.67     1.0         1.0         
+precisionGibbsOperator                                    124160     704776   5.68     1.0         1.0         
+precisionGibbsOperator                                    123659     701085   5.67     1.0         1.0         
+precisionGibbsOperator                                    124078     703751   5.67     1.0         1.0         
+precisionGibbsOperator                                    124604     706182   5.67     1.0         1.0         
+precisionGibbsOperator                                    123951     702960   5.67     1.0         1.0         
+precisionGibbsOperator                                    124076     704642   5.68     1.0         1.0         
+precisionGibbsOperator                                    124762     708076   5.68     1.0         1.0         
+precisionGibbsOperator                                    124354     705080   5.67     1.0         1.0         
+precisionGibbsOperator                                    124449     705745   5.67     1.0         1.0         
+precisionGibbsOperator                                    124606     706748   5.67     1.0         1.0         
+precisionGibbsOperator                                    125081     709175   5.67     1.0         1.0         
+precisionGibbsOperator                                    124008     703614   5.67     1.0         1.0         
+precisionGibbsOperator                                    125001     709276   5.67     1.0         1.0         
+precisionGibbsOperator                                    124545     706142   5.67     1.0         1.0         
+precisionGibbsOperator                                    124121     703970   5.67     1.0         1.0         
+precisionGibbsOperator                                    124051     703343   5.67     1.0         1.0         
+precisionGibbsOperator                                    124539     705892   5.67     1.0         1.0         
+precisionGibbsOperator                                    124329     705162   5.67     1.0         1.0         
+precisionGibbsOperator                                    125120     709194   5.67     1.0         1.0         
+precisionGibbsOperator                                    124657     706368   5.67     1.0         1.0         
+precisionGibbsOperator                                    124571     1758519  14.12    1.0         1.0         
+precisionGibbsOperator                                    124475     705771   5.67     1.0         1.0         
+precisionGibbsOperator                                    125120     709774   5.67     1.0         1.0         
+precisionGibbsOperator                                    124191     704630   5.67     1.0         1.0         
+precisionGibbsOperator                                    124146     704526   5.67     1.0         1.0         
+precisionGibbsOperator                                    124289     705054   5.67     1.0         1.0         
+precisionGibbsOperator                                    124529     706433   5.67     1.0         1.0         
+precisionGibbsOperator                                    124920     708559   5.67     1.0         1.0         
+precisionGibbsOperator                                    124599     706364   5.67     1.0         1.0         
+precisionGibbsOperator                                    124793     707757   5.67     1.0         1.0         
+precisionGibbsOperator                                    124396     705840   5.67     1.0         1.0         
+precisionGibbsOperator                                    124669     707500   5.68     1.0         1.0         
+precisionGibbsOperator                                    124200     704895   5.68     1.0         1.0         
+precisionGibbsOperator                                    124745     707783   5.67     1.0         1.0         
+precisionGibbsOperator                                    124483     705811   5.67     1.0         1.0         
+precisionGibbsOperator                                    124408     705253   5.67     1.0         1.0         
+precisionGibbsOperator                                    124750     707735   5.67     1.0         1.0         
+precisionGibbsOperator                                    125272     710520   5.67     1.0         1.0         
+precisionGibbsOperator                                    124010     703809   5.68     1.0         1.0         
+precisionGibbsOperator                                    125012     708896   5.67     1.0         1.0         
+precisionGibbsOperator                                    124422     705956   5.67     1.0         1.0         
+precisionGibbsOperator                                    124846     708177   5.67     1.0         1.0         
+precisionGibbsOperator                                    124834     708495   5.68     1.0         1.0         
+precisionGibbsOperator                                    124624     707231   5.67     1.0         1.0         
+precisionGibbsOperator                                    124061     704161   5.68     1.0         1.0         
+precisionGibbsOperator                                    124078     703772   5.67     1.0         1.0         
+precisionGibbsOperator                                    124841     708111   5.67     1.0         1.0         
+precisionGibbsOperator                                    123925     702846   5.67     1.0         1.0         
+precisionGibbsOperator                                    124716     707091   5.67     1.0         1.0         
+precisionGibbsOperator                                    125302     710565   5.67     1.0         1.0         
+precisionGibbsOperator                                    125022     709040   5.67     1.0         1.0         
+precisionGibbsOperator                                    124607     706916   5.67     1.0         1.0         
+precisionGibbsOperator                                    124678     706970   5.67     1.0         1.0         
+precisionGibbsOperator                                    123751     701942   5.67     1.0         1.0         
+precisionGibbsOperator                                    124259     704782   5.67     1.0         1.0         
+precisionGibbsOperator                                    124815     707633   5.67     1.0         1.0         
+precisionGibbsOperator                                    124180     704269   5.67     1.0         1.0         
+precisionGibbsOperator                                    124761     707616   5.67     1.0         1.0         
+precisionGibbsOperator                                    124317     705338   5.67     1.0         1.0         
+precisionGibbsOperator                                    124788     707681   5.67     1.0         1.0         
+precisionGibbsOperator                                    124962     708112   5.67     1.0         1.0         
+precisionGibbsOperator                                    124380     705905   5.68     1.0         1.0         
+precisionGibbsOperator                                    124817     707987   5.67     1.0         1.0         
+precisionGibbsOperator                                    124641     706765   5.67     1.0         1.0         
+precisionGibbsOperator                                    124231     704502   5.67     1.0         1.0         
+precisionGibbsOperator                                    124612     706958   5.67     1.0         1.0         
+precisionGibbsOperator                                    124368     705916   5.68     1.0         1.0         
+precisionGibbsOperator                                    123814     702681   5.68     1.0         1.0         
+precisionGibbsOperator                                    123780     701933   5.67     1.0         1.0         
+precisionGibbsOperator                                    124748     707483   5.67     1.0         1.0         
+precisionGibbsOperator                                    124528     705930   5.67     1.0         1.0         
+precisionGibbsOperator                                    124132     703709   5.67     1.0         1.0         
+precisionGibbsOperator                                    124304     705430   5.68     1.0         1.0         
+precisionGibbsOperator                                    125016     709936   5.68     1.0         1.0         
+precisionGibbsOperator                                    124378     706302   5.68     1.0         1.0         
+precisionGibbsOperator                                    124429     705828   5.67     1.0         1.0         
+precisionGibbsOperator                                    124650     707370   5.67     1.0         1.0         
+precisionGibbsOperator                                    124766     708317   5.68     1.0         1.0         
+precisionGibbsOperator                                    123798     702517   5.67     1.0         1.0         
+precisionGibbsOperator                                    124046     703289   5.67     1.0         1.0         
+precisionGibbsOperator                                    124136     704250   5.67     1.0         1.0         
+precisionGibbsOperator                                    124457     705596   5.67     1.0         1.0         
+precisionGibbsOperator                                    124312     705554   5.68     1.0         1.0         
+precisionGibbsOperator                                    124260     704693   5.67     1.0         1.0         
+precisionGibbsOperator                                    124765     707585   5.67     1.0         1.0         
+precisionGibbsOperator                                    124448     706003   5.67     1.0         1.0         
+precisionGibbsOperator                                    123982     702943   5.67     1.0         1.0         
+precisionGibbsOperator                                    124640     706962   5.67     1.0         1.0         
+precisionGibbsOperator                                    124081     704223   5.68     1.0         1.0         
+precisionGibbsOperator                                    124614     707015   5.67     1.0         1.0         
+precisionGibbsOperator                                    124264     705231   5.68     1.0         1.0         
+precisionGibbsOperator                                    124820     708609   5.68     1.0         1.0         
+precisionGibbsOperator                                    124225     704433   5.67     1.0         1.0         
+precisionGibbsOperator                                    124828     708300   5.67     1.0         1.0         
+precisionGibbsOperator                                    124632     706867   5.67     1.0         1.0         
+precisionGibbsOperator                                    125019     708684   5.67     1.0         1.0         
+precisionGibbsOperator                                    124227     704188   5.67     1.0         1.0         
+precisionGibbsOperator                                    124553     706564   5.67     1.0         1.0         
+precisionGibbsOperator                                    125157     709625   5.67     1.0         1.0         
+precisionGibbsOperator                                    124612     1678320  13.47    1.0         1.0         
+precisionGibbsOperator                                    125040     709191   5.67     1.0         1.0         
+precisionGibbsOperator                                    124835     708096   5.67     1.0         1.0         
+precisionGibbsOperator                                    124920     708867   5.67     1.0         1.0         
+precisionGibbsOperator                                    124348     705593   5.67     1.0         1.0         
+precisionGibbsOperator                                    124818     707896   5.67     1.0         1.0         
+precisionGibbsOperator                                    125036     709638   5.68     1.0         1.0         
+precisionGibbsOperator                                    124556     706371   5.67     1.0         1.0         
+precisionGibbsOperator                                    124187     705056   5.68     1.0         1.0         
+precisionGibbsOperator                                    124355     705642   5.67     1.0         1.0         
+precisionGibbsOperator                                    125016     709789   5.68     1.0         1.0         
+precisionGibbsOperator                                    125006     709028   5.67     1.0         1.0         
+precisionGibbsOperator                                    124715     707216   5.67     1.0         1.0         
+precisionGibbsOperator                                    124282     705258   5.67     1.0         1.0         
+precisionGibbsOperator                                    124014     703538   5.67     1.0         1.0         
+precisionGibbsOperator                                    124368     705608   5.67     1.0         1.0         
+precisionGibbsOperator                                    124443     705223   5.67     1.0         1.0         
+precisionGibbsOperator                                    124447     706056   5.67     1.0         1.0         
+precisionGibbsOperator                                    124896     708667   5.67     1.0         1.0         
+precisionGibbsOperator                                    125058     709182   5.67     1.0         1.0         
+precisionGibbsOperator                                    124565     706885   5.67     1.0         1.0         
+precisionGibbsOperator                                    124901     709342   5.68     1.0         1.0         
+precisionGibbsOperator                                    124747     707638   5.67     1.0         1.0         
+precisionGibbsOperator                                    124287     704916   5.67     1.0         1.0         
+precisionGibbsOperator                                    124570     706715   5.67     1.0         1.0         
+precisionGibbsOperator                                    124202     704698   5.67     1.0         1.0         
+precisionGibbsOperator                                    124598     706004   5.67     1.0         1.0         
+precisionGibbsOperator                                    124660     707469   5.68     1.0         1.0         
+precisionGibbsOperator                                    123891     1650044  13.32    1.0         1.0         
+precisionGibbsOperator                                    124506     706627   5.68     1.0         1.0         
+precisionGibbsOperator                                    124770     707677   5.67     1.0         1.0         
+precisionGibbsOperator                                    124083     703577   5.67     1.0         1.0         
+precisionGibbsOperator                                    124916     708456   5.67     1.0         1.0         
+precisionGibbsOperator                                    124161     704915   5.68     1.0         1.0         
+precisionGibbsOperator                                    124814     707758   5.67     1.0         1.0         
+precisionGibbsOperator                                    124447     705297   5.67     1.0         1.0         
+precisionGibbsOperator                                    124807     708036   5.67     1.0         1.0         
+precisionGibbsOperator                                    124284     705042   5.67     1.0         1.0         
+precisionGibbsOperator                                    124083     703627   5.67     1.0         1.0         
+precisionGibbsOperator                                    124731     708301   5.68     1.0         1.0         
+precisionGibbsOperator                                    124346     705813   5.68     1.0         1.0         
+precisionGibbsOperator                                    124257     704783   5.67     1.0         1.0         
+precisionGibbsOperator                                    124426     705822   5.67     1.0         1.0         
+precisionGibbsOperator                                    123610     701570   5.68     1.0         1.0         
+precisionGibbsOperator                                    124719     707303   5.67     1.0         1.0         
+precisionGibbsOperator                                    124239     704714   5.67     1.0         1.0         
+precisionGibbsOperator                                    124883     708464   5.67     1.0         1.0         
+precisionGibbsOperator                                    124311     704870   5.67     1.0         1.0         
+precisionGibbsOperator                                    124194     704286   5.67     1.0         1.0         
+precisionGibbsOperator                                    124382     705641   5.67     1.0         1.0         
+precisionGibbsOperator                                    124855     708043   5.67     1.0         1.0         
+precisionGibbsOperator                                    124534     706553   5.67     1.0         1.0         
+precisionGibbsOperator                                    124396     705268   5.67     1.0         1.0         
+precisionGibbsOperator                                    124612     707070   5.67     1.0         1.0         
+precisionGibbsOperator                                    124293     704678   5.67     1.0         1.0         
+precisionGibbsOperator                                    124914     708495   5.67     1.0         1.0         
+precisionGibbsOperator                                    124988     708975   5.67     1.0         1.0         
+precisionGibbsOperator                                    124994     709024   5.67     1.0         1.0         
+precisionGibbsOperator                                    124361     705592   5.67     1.0         1.0         
+precisionGibbsOperator                                    124703     707385   5.67     1.0         1.0         
+precisionGibbsOperator                                    125007     708826   5.67     1.0         1.0         
+precisionGibbsOperator                                    124394     705466   5.67     1.0         1.0         
+precisionGibbsOperator                                    124767     707447   5.67     1.0         1.0         
+precisionGibbsOperator                                    124438     706098   5.67     1.0         1.0         
+precisionGibbsOperator                                    124261     704942   5.67     1.0         1.0         
+precisionGibbsOperator                                    124534     706869   5.68     1.0         1.0         
+precisionGibbsOperator                                    124479     706613   5.68     1.0         1.0         
+precisionGibbsOperator                                    124394     705529   5.67     1.0         1.0         
+precisionGibbsOperator                                    124338     704676   5.67     1.0         1.0         
+precisionGibbsOperator                                    124497     706070   5.67     1.0         1.0         
+precisionGibbsOperator                                    124677     707272   5.67     1.0         1.0         
+precisionGibbsOperator                                    124365     705813   5.68     1.0         1.0         
+precisionGibbsOperator                                    123973     703192   5.67     1.0         1.0         
+precisionGibbsOperator                                    124606     707067   5.67     1.0         1.0         
+precisionGibbsOperator                                    124657     707106   5.67     1.0         1.0         
+precisionGibbsOperator                                    124914     708610   5.67     1.0         1.0         
+precisionGibbsOperator                                    124397     706185   5.68     1.0         1.0         
+precisionGibbsOperator                                    123837     702889   5.68     1.0         1.0         
+precisionGibbsOperator                                    124994     708695   5.67     1.0         1.0         
+precisionGibbsOperator                                    124278     705066   5.67     1.0         1.0         
+precisionGibbsOperator                                    124753     707931   5.67     1.0         1.0         
+precisionGibbsOperator                                    124768     707735   5.67     1.0         1.0         
+precisionGibbsOperator                                    124412     706019   5.67     1.0         1.0         
+precisionGibbsOperator                                    124692     707227   5.67     1.0         1.0         
+precisionGibbsOperator                                    124659     706732   5.67     1.0         1.0         
+precisionGibbsOperator                                    124693     707394   5.67     1.0         1.0         
+precisionGibbsOperator                                    124158     705159   5.68     1.0         1.0         
+precisionGibbsOperator                                    123803     702818   5.68     1.0         1.0         
+precisionGibbsOperator                                    124119     703889   5.67     1.0         1.0         
+precisionGibbsOperator                                    124514     706142   5.67     1.0         1.0         
+precisionGibbsOperator                                    124772     707688   5.67     1.0         1.0         
+precisionGibbsOperator                                    124115     703850   5.67     1.0         1.0         
+precisionGibbsOperator                                    124236     705101   5.68     1.0         1.0         
+precisionGibbsOperator                                    124941     708814   5.67     1.0         1.0         
+precisionGibbsOperator                                    124724     707617   5.67     1.0         1.0         
+precisionGibbsOperator                                    124256     705579   5.68     1.0         1.0         
+precisionGibbsOperator                                    124636     707010   5.67     1.0         1.0         
+precisionGibbsOperator                                    125311     710808   5.67     1.0         1.0         
+precisionGibbsOperator                                    124714     707953   5.68     1.0         1.0         
+precisionGibbsOperator                                    124172     703931   5.67     1.0         1.0         
+precisionGibbsOperator                                    124757     707400   5.67     1.0         1.0         
+precisionGibbsOperator                                    123984     703559   5.67     1.0         1.0         
+precisionGibbsOperator                                    124737     707691   5.67     1.0         1.0         
+precisionGibbsOperator                                    124173     704875   5.68     1.0         1.0         
+precisionGibbsOperator                                    125147     709943   5.67     1.0         1.0         
+precisionGibbsOperator                                    124779     707408   5.67     1.0         1.0         
+precisionGibbsOperator                                    123852     703093   5.68     1.0         1.0         
+precisionGibbsOperator                                    125069     709825   5.68     1.0         1.0         
+precisionGibbsOperator                                    125061     709279   5.67     1.0         1.0         
+precisionGibbsOperator                                    125050     708918   5.67     1.0         1.0         
+precisionGibbsOperator                                    124878     707270   5.66     1.0         1.0         
+precisionGibbsOperator                                    124631     707694   5.68     1.0         1.0         
+precisionGibbsOperator                                    124699     707759   5.68     1.0         1.0         
+precisionGibbsOperator                                    124355     704733   5.67     1.0         1.0         
+precisionGibbsOperator                                    124554     706193   5.67     1.0         1.0         
+precisionGibbsOperator                                    124647     706593   5.67     1.0         1.0         
+precisionGibbsOperator                                    124004     703221   5.67     1.0         1.0         
+precisionGibbsOperator                                    124325     705037   5.67     1.0         1.0         
+precisionGibbsOperator                                    124786     708223   5.68     1.0         1.0         
+precisionGibbsOperator                                    124756     707909   5.67     1.0         1.0         
+precisionGibbsOperator                                    124723     707104   5.67     1.0         1.0         
+precisionGibbsOperator                                    125046     710054   5.68     1.0         1.0         
+precisionGibbsOperator                                    124135     704532   5.68     1.0         1.0         
+precisionGibbsOperator                                    124460     705534   5.67     1.0         1.0         
+precisionGibbsOperator                                    124193     704931   5.68     1.0         1.0         
+precisionGibbsOperator                                    124532     706793   5.68     1.0         1.0         
+precisionGibbsOperator                                    123735     702141   5.67     1.0         1.0         
+precisionGibbsOperator                                    124525     705749   5.67     1.0         1.0         
+precisionGibbsOperator                                    124162     704230   5.67     1.0         1.0         
+precisionGibbsOperator                                    124191     703907   5.67     1.0         1.0         
+precisionGibbsOperator                                    124258     705053   5.67     1.0         1.0         
+precisionGibbsOperator                                    125122     710268   5.68     1.0         1.0         
+precisionGibbsOperator                                    124109     703442   5.67     1.0         1.0         
+precisionGibbsOperator                                    124245     705398   5.68     1.0         1.0         
+precisionGibbsOperator                                    124802     707496   5.67     1.0         1.0         
+precisionGibbsOperator                                    124282     1620606  13.04    1.0         1.0         
+precisionGibbsOperator                                    124761     707752   5.67     1.0         1.0         
+precisionGibbsOperator                                    124833     708287   5.67     1.0         1.0         
+precisionGibbsOperator                                    123889     702805   5.67     1.0         1.0         
+precisionGibbsOperator                                    124636     706730   5.67     1.0         1.0         
+precisionGibbsOperator                                    124889     708376   5.67     1.0         1.0         
+precisionGibbsOperator                                    124070     703755   5.67     1.0         1.0         
+precisionGibbsOperator                                    124772     708118   5.68     1.0         1.0         
+precisionGibbsOperator                                    124295     705579   5.68     1.0         1.0         
+precisionGibbsOperator                                    123955     703212   5.67     1.0         1.0         
+precisionGibbsOperator                                    124001     703428   5.67     1.0         1.0         
+precisionGibbsOperator                                    123415     700396   5.68     1.0         1.0         
+precisionGibbsOperator                                    124802     708225   5.67     1.0         1.0         
+precisionGibbsOperator                                    124897     708606   5.67     1.0         1.0         
+precisionGibbsOperator                                    124601     706847   5.67     1.0         1.0         
+precisionGibbsOperator                                    124390     705914   5.68     1.0         1.0         
+precisionGibbsOperator                                    124662     707082   5.67     1.0         1.0         
+precisionGibbsOperator                                    124162     705150   5.68     1.0         1.0         
+precisionGibbsOperator                                    124247     704665   5.67     1.0         1.0         
+precisionGibbsOperator                                    124221     704272   5.67     1.0         1.0         
+precisionGibbsOperator                                    124247     704618   5.67     1.0         1.0         
+precisionGibbsOperator                                    125276     710371   5.67     1.0         1.0         
+precisionGibbsOperator                                    124282     704702   5.67     1.0         1.0         
+precisionGibbsOperator                                    125020     709564   5.68     1.0         1.0         
+precisionGibbsOperator                                    124728     707660   5.67     1.0         1.0         
+precisionGibbsOperator                                    124489     706798   5.68     1.0         1.0         
+precisionGibbsOperator                                    124183     1611899  12.98    1.0         1.0         
+precisionGibbsOperator                                    125178     709614   5.67     1.0         1.0         
+precisionGibbsOperator                                    124027     703702   5.67     1.0         1.0         
+precisionGibbsOperator                                    124656     707541   5.68     1.0         1.0         
+precisionGibbsOperator                                    125037     709818   5.68     1.0         1.0         
+precisionGibbsOperator                                    124822     708592   5.68     1.0         1.0         
+precisionGibbsOperator                                    124256     705441   5.68     1.0         1.0         
+precisionGibbsOperator                                    124787     707655   5.67     1.0         1.0         
+precisionGibbsOperator                                    124197     704441   5.67     1.0         1.0         
+precisionGibbsOperator                                    124899     708437   5.67     1.0         1.0         
+precisionGibbsOperator                                    123911     702799   5.67     1.0         1.0         
+precisionGibbsOperator                                    124299     704835   5.67     1.0         1.0         
+precisionGibbsOperator                                    124438     706108   5.67     1.0         1.0         
+precisionGibbsOperator                                    124096     703773   5.67     1.0         1.0         
+precisionGibbsOperator                                    124900     708005   5.67     1.0         1.0         
+precisionGibbsOperator                                    124468     706131   5.67     1.0         1.0         
+precisionGibbsOperator                                    124506     705743   5.67     1.0         1.0         
+precisionGibbsOperator                                    124520     706783   5.68     1.0         1.0         
+precisionGibbsOperator                                    125483     712202   5.68     1.0         1.0         
+precisionGibbsOperator                                    124092     703657   5.67     1.0         1.0         
+precisionGibbsOperator                                    124278     705028   5.67     1.0         1.0         
+precisionGibbsOperator                                    124547     706680   5.67     1.0         1.0         
+precisionGibbsOperator                                    125100     709706   5.67     1.0         1.0         
+precisionGibbsOperator                                    124515     706315   5.67     1.0         1.0         
+precisionGibbsOperator                                    124733     707573   5.67     1.0         1.0         
+precisionGibbsOperator                                    124201     704860   5.68     1.0         1.0         
+precisionGibbsOperator                                    124400     705659   5.67     1.0         1.0         
+precisionGibbsOperator                                    124185     704079   5.67     1.0         1.0         
+precisionGibbsOperator                                    124470     706572   5.68     1.0         1.0         
+precisionGibbsOperator                                    124529     706172   5.67     1.0         1.0         
+precisionGibbsOperator                                    124049     703332   5.67     1.0         1.0         
+precisionGibbsOperator                                    124026     703333   5.67     1.0         1.0         
+precisionGibbsOperator                                    124670     706846   5.67     1.0         1.0         
+precisionGibbsOperator                                    124284     704561   5.67     1.0         1.0         
+precisionGibbsOperator                                    124312     704839   5.67     1.0         1.0         
+precisionGibbsOperator                                    123866     702286   5.67     1.0         1.0         
+precisionGibbsOperator                                    124532     706512   5.67     1.0         1.0         
+precisionGibbsOperator                                    125023     709038   5.67     1.0         1.0         
+precisionGibbsOperator                                    124546     706766   5.67     1.0         1.0         
+precisionGibbsOperator                                    124763     707461   5.67     1.0         1.0         
+precisionGibbsOperator                                    125336     711636   5.68     1.0         1.0         
+precisionGibbsOperator                                    124663     707426   5.67     1.0         1.0         
+precisionGibbsOperator                                    124665     706683   5.67     1.0         1.0         
+precisionGibbsOperator                                    124919     709034   5.68     1.0         1.0         
+precisionGibbsOperator                                    124391     705530   5.67     1.0         1.0         
+precisionGibbsOperator                                    124514     706346   5.67     1.0         1.0         
+precisionGibbsOperator                                    124105     704501   5.68     1.0         1.0         
+precisionGibbsOperator                                    124652     706885   5.67     1.0         1.0         
+precisionGibbsOperator                                    124678     707673   5.68     1.0         1.0         
+precisionGibbsOperator                                    123759     702093   5.67     1.0         1.0         
+precisionGibbsOperator                                    124321     705704   5.68     1.0         1.0         
+precisionGibbsOperator                                    124592     706802   5.67     1.0         1.0         
+precisionGibbsOperator                                    125164     709860   5.67     1.0         1.0         
+precisionGibbsOperator                                    124614     706376   5.67     1.0         1.0         
+precisionGibbsOperator                                    125049     708684   5.67     1.0         1.0         
+precisionGibbsOperator                                    123884     702272   5.67     1.0         1.0         
+precisionGibbsOperator                                    124688     707311   5.67     1.0         1.0         
+precisionGibbsOperator                                    124261     704831   5.67     1.0         1.0         
+precisionGibbsOperator                                    124990     708684   5.67     1.0         1.0         
+precisionGibbsOperator                                    124372     705325   5.67     1.0         1.0         
+precisionGibbsOperator                                    124817     708389   5.68     1.0         1.0         
+precisionGibbsOperator                                    124421     705995   5.67     1.0         1.0         
+precisionGibbsOperator                                    124019     703196   5.67     1.0         1.0         
+precisionGibbsOperator                                    124289     705150   5.67     1.0         1.0         
+precisionGibbsOperator                                    123990     703285   5.67     1.0         1.0         
+precisionGibbsOperator                                    124249     704968   5.67     1.0         1.0         
+precisionGibbsOperator                                    124001     703899   5.68     1.0         1.0         
+precisionGibbsOperator                                    124531     706710   5.67     1.0         1.0         
+precisionGibbsOperator                                    124584     707033   5.68     1.0         1.0         
+precisionGibbsOperator                                    124293     705367   5.68     1.0         1.0         
+precisionGibbsOperator                                    124560     706642   5.67     1.0         1.0         
+precisionGibbsOperator                                    124772     707724   5.67     1.0         1.0         
+precisionGibbsOperator                                    124518     706065   5.67     1.0         1.0         
+precisionGibbsOperator                                    124184     705472   5.68     1.0         1.0         
+precisionGibbsOperator                                    124088     703808   5.67     1.0         1.0         
+precisionGibbsOperator                                    124689     707330   5.67     1.0         1.0         
+precisionGibbsOperator                                    125172     710044   5.67     1.0         1.0         
+precisionGibbsOperator                                    124334     705565   5.67     1.0         1.0         
+precisionGibbsOperator                                    124948     709528   5.68     1.0         1.0         
+precisionGibbsOperator                                    124566     706628   5.67     1.0         1.0         
+precisionGibbsOperator                                    124418     705816   5.67     1.0         1.0         
+precisionGibbsOperator                                    124126     704119   5.67     1.0         1.0         
+precisionGibbsOperator                                    124036     703629   5.67     1.0         1.0         
+precisionGibbsOperator                                    124380     705832   5.67     1.0         1.0         
+precisionGibbsOperator                                    124043     704068   5.68     1.0         1.0         
+precisionGibbsOperator                                    124560     706521   5.67     1.0         1.0         
+precisionGibbsOperator                                    123709     701570   5.67     1.0         1.0         
+precisionGibbsOperator                                    124485     705904   5.67     1.0         1.0         
+precisionGibbsOperator                                    124273     705009   5.67     1.0         1.0         
+precisionGibbsOperator                                    124753     708038   5.68     1.0         1.0         
+precisionGibbsOperator                                    124870     708333   5.67     1.0         1.0         
+precisionGibbsOperator                                    124544     706415   5.67     1.0         1.0         
+precisionGibbsOperator                                    124397     705639   5.67     1.0         1.0         
+precisionGibbsOperator                                    124616     707370   5.68     1.0         1.0         
+precisionGibbsOperator                                    124184     704536   5.67     1.0         1.0         
+precisionGibbsOperator                                    124171     704075   5.67     1.0         1.0         
+precisionGibbsOperator                                    124141     704338   5.67     1.0         1.0         
+precisionGibbsOperator                                    124684     1631644  13.09    1.0         1.0         
+precisionGibbsOperator                                    124340     705225   5.67     1.0         1.0         
+precisionGibbsOperator                                    123865     703062   5.68     1.0         1.0         
+precisionGibbsOperator                                    124607     706788   5.67     1.0         1.0         
+precisionGibbsOperator                                    124637     707108   5.67     1.0         1.0         
+precisionGibbsOperator                                    123975     703473   5.67     1.0         1.0         
+precisionGibbsOperator                                    124328     705012   5.67     1.0         1.0         
+precisionGibbsOperator                                    124080     704124   5.67     1.0         1.0         
+precisionGibbsOperator                                    124254     705440   5.68     1.0         1.0         
+precisionGibbsOperator                                    124926     708727   5.67     1.0         1.0         
+precisionGibbsOperator                                    124315     705770   5.68     1.0         1.0         
+precisionGibbsOperator                                    124629     706500   5.67     1.0         1.0         
+precisionGibbsOperator                                    124492     706176   5.67     1.0         1.0         
+precisionGibbsOperator                                    124932     708684   5.67     1.0         1.0         
+precisionGibbsOperator                                    124821     707728   5.67     1.0         1.0         
+precisionGibbsOperator                                    124497     1720828  13.82    1.0         1.0         
+precisionGibbsOperator                                    124640     707007   5.67     1.0         1.0         
+precisionGibbsOperator                                    124125     704491   5.68     1.0         1.0         
+precisionGibbsOperator                                    125136     1665074  13.31    1.0         1.0         
+precisionGibbsOperator                                    123802     702072   5.67     1.0         1.0         
+precisionGibbsOperator                                    124580     706683   5.67     1.0         1.0         
+precisionGibbsOperator                                    124510     706664   5.68     1.0         1.0         
+precisionGibbsOperator                                    125389     711557   5.67     1.0         1.0         
+precisionGibbsOperator                                    124402     705308   5.67     1.0         1.0         
+precisionGibbsOperator                                    124410     1689862  13.58    1.0         1.0         
+precisionGibbsOperator                                    125057     709583   5.67     1.0         1.0         
+precisionGibbsOperator                                    124829     707503   5.67     1.0         1.0         
+precisionGibbsOperator                                    124232     704718   5.67     1.0         1.0         
+precisionGibbsOperator                                    124968     708639   5.67     1.0         1.0         
+precisionGibbsOperator                                    124594     706297   5.67     1.0         1.0         
+precisionGibbsOperator                                    124293     704757   5.67     1.0         1.0         
+precisionGibbsOperator                                    124982     708832   5.67     1.0         1.0         
+precisionGibbsOperator                                    124803     707460   5.67     1.0         1.0         
+precisionGibbsOperator                                    124200     704910   5.68     1.0         1.0         
+precisionGibbsOperator                                    124706     707103   5.67     1.0         1.0         
+precisionGibbsOperator                                    124513     706022   5.67     1.0         1.0         
+precisionGibbsOperator                                    124104     704478   5.68     1.0         1.0         
+precisionGibbsOperator                                    124537     706598   5.67     1.0         1.0         
+precisionGibbsOperator                                    124533     706806   5.68     1.0         1.0         
+precisionGibbsOperator                                    125322     710967   5.67     1.0         1.0         
+precisionGibbsOperator                                    125094     709612   5.67     1.0         1.0         
+precisionGibbsOperator                                    123945     702934   5.67     1.0         1.0         
+precisionGibbsOperator                                    124391     705307   5.67     1.0         1.0         
+precisionGibbsOperator                                    124971     709006   5.67     1.0         1.0         
+precisionGibbsOperator                                    124339     705167   5.67     1.0         1.0         
+precisionGibbsOperator                                    124362     705171   5.67     1.0         1.0         
+precisionGibbsOperator                                    124184     704483   5.67     1.0         1.0         
+precisionGibbsOperator                                    124432     705639   5.67     1.0         1.0         
+precisionGibbsOperator                                    124465     705905   5.67     1.0         1.0         
+precisionGibbsOperator                                    124113     703997   5.67     1.0         1.0         
+precisionGibbsOperator                                    124631     707250   5.67     1.0         1.0         
+precisionGibbsOperator                                    124151     704521   5.67     1.0         1.0         
+precisionGibbsOperator                                    124514     705935   5.67     1.0         1.0         
+precisionGibbsOperator                                    124300     705404   5.68     1.0         1.0         
+precisionGibbsOperator                                    124767     707878   5.67     1.0         1.0         
+precisionGibbsOperator                                    124303     704736   5.67     1.0         1.0         
+

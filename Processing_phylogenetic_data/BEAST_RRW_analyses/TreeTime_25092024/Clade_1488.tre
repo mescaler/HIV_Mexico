@@ -1,0 +1,4 @@
+#NEXUS
+begin trees;
+	tree tree_1 = [&R] ('CEC-21-4883|MEX|ST_2|Cluster_NA|2021/09/17':1.78235,('CEC-21-5935|MEX|ST_2|Cluster_NA|2021/12/14':0.1584,'CEC-21-5939|MEX|ST_2|Cluster_NA|2021/12/14':0.1584):1.86495):45.990393;
+end;
