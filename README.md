@@ -25,7 +25,7 @@ Contains Python scripts for evaluating the potential influence of geographic sam
 - Incidence-informed HIV sequence subsampling
 - Supporting files for assessing geographic sampling bias
 
-### 3. `Mobility_networks/`
+### 3. `mobility_networks/`
 **Human mobility network analysis**
 
 Contains Python scripts for processing and analysing human mobility data across Greater Mexico City.
