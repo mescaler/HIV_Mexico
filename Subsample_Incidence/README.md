@@ -19,13 +19,15 @@ medRxiv 2026.05.26.26354122; posted 27 May 2026.
 
 Contact: m.zamudio@ucl.ac.uk 
 
+Supplementary File 1, including Supplementary Table 1 and its per-cell subsampling targets, is available through the [medRxiv manuscript documentation](https://www.medrxiv.org/content/10.64898/2026.05.26.26354122v1) and is not included in this repository. Other supplementary materials and associated source data will be made available upon publication.
+
 ## Files
 
 | File | What it is |
 |------|------------|
 | `HIV_subsample_incidence.py` | Reads `input.fasta`, keeps sequences from `ST_1`/`ST_2` in 2019–2022, randomly samples a fixed number per year × site, and writes `R1.fasta`. |
 | `HIV_subsample_count.py` | Reads `R1.fasta` and prints a year × site count table with row and column totals. |
-| `Supplementary_Table_1.csv` | Supplementary Table 1 with the SUBSAMPLE column recomputed as `round(incidence × 21.81)` |
+| Supplementary File 1, Supplementary Table 1 | Manuscript supplement containing the SUBSAMPLE targets; available through the linked manuscript documentation and not included in this repository. |
 | `NAME_DATE_REPS.xlsx` | Name/date tables for the replicas, one sheet each (`R1`–`R5`), 32,182 sequences per sheet (the 1,896 subsampled CIENI-CEC sequences plus all background sequences). Tip-date file for the time-scaled phylogeny. |
 
 ## Pipeline

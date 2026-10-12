@@ -25,7 +25,7 @@ Contains Python scripts for evaluating the potential influence of geographic sam
 - Incidence-informed HIV sequence subsampling
 - Supporting files for assessing geographic sampling bias
 
-### 3. `mobility_networks/`
+### 3. `Mobility_networks/`
 **Human mobility network analysis**
 
 Contains Python scripts for processing and analysing human mobility data across Greater Mexico City.
@@ -37,8 +37,8 @@ Includes:
 - Summaries of daily device and mobility record counts
 
 **Before running the analyses:**
-1. Review the documentation within each directory.
+1. Review any directory-level documentation that is available.
 2. Update project-specific input and output file paths.
 3. Ensure that the required external datasets and software dependencies are available.
 
-Some workflows depend on external source data that are not distributed within this repository (see SI of original manuscript). 
+Supplementary materials and associated source data not distributed in this repository are available through the [manuscript documentation on medRxiv](https://www.medrxiv.org/content/10.64898/2026.05.26.26354122v1) and will be made available upon publication.
